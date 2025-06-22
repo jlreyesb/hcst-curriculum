@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Curriculum Documents</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+
+    .documents-section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .documents-section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #1f2937;
+    }
+
+    .document-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .document-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff8dc;
+      border: 2px solid #f6e27f;
+      border-radius: 10px;
+      padding: 1rem 1.5rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .document-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background-color: #fff4b2;
+    }
+
+    .document-title {
+      font-weight: 600;
+      color: #1f2937;
+    }
+
+    .document-item a {
+      background-color: #fcd34d;
+      color: #000;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background-color 0.2s ease;
+    }
+
+    .document-item a:hover {
+      background-color: #d4af37;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-container">
+    <header>
+      <div class="logo">
+        <h1>HCST Curriculum</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="documents.html" class="active">Documents</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="documents-section">
+        <h2>Curriculum Documents</h2>
+        <div class="document-list">
+          <div class="document-item">
+            <span class="document-title">Curriculum Guide 2024</span>
+            <a href="documents/curriculum-guide-2024.pdf" target="_blank">View PDF</a>
+          </div>
+          <div class="document-item">
+            <span class="document-title">Scope & Sequence</span>
+            <a href="documents/scope-sequence.pdf" target="_blank">View PDF</a>
+          </div>
+          <div class="document-item">
+            <span class="document-title">Standards Alignment</span>
+            <a href="documents/standards-alignment.pdf" target="_blank">View PDF</a>
+          </div>
+          <!-- Add more document items here as needed -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 HCST District. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

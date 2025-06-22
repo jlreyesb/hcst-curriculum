@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CTE Programs</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .program-toggle {
+      cursor: pointer;
+      margin-top: 25px;
+    }
+
+   .course-list {
+  display: none;
+  flex-wrap: wrap;
+  gap: 16px; /* adds spacing between boxes */
+  margin: 15px 0 30px 0;
+}
+
+.details h3 {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333333;
+}
+
+
+.cte-button {
+  background-color: #e5e7eb;
+  color: #1f2937;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  border: 1px solid #d1d5db;
+  display: inline-block;
+  min-width: 160px; /* ensures consistent button size */
+  text-align: center;
+}
+
+    .cte-button:hover {
+      background-color: #d4af37;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-container">
+  <header>
+    <div class="logo">
+      <h1>HCST Curriculum</h1>
+    </div>
+    <nav>
+      <ul>
+         <li><a href="../index.html">Home</a></li>
+        <li><a href="../documents.html">Documents</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+
+ <section class="details">
+  <h2>Career Technical Education (CTE) Programs</h2>
+
+<h3 style="text-align: center; margin-top: 2.5rem; margin-bottom: 1rem; color: #333;">HTHS DFAB Majors</h3>
+
+
+  <!-- Architecture & Design -->
+  <div>
+    <div class="course-item program-toggle" onclick="toggleCourses(this)">Architecture & Design</div>
+    <div class="course-list">
+      <a class="cte-button" href="cte/architecture/intro-to-architecture.html">Intro to Architecture</a>
+      <a class="cte-button" href="cte/architecture/advanced-architecture.html">Advanced Architecture</a>
+    </div>
+  </div>
+
+  <!-- Computer Programming -->
+  <div>
+    <div class="course-item program-toggle" onclick="toggleCourses(this)">Computer Programming</div>
+    <div class="course-list">
+      <a class="cte-button" href="cte/programming/introduction-to-coding.html">Intro to Coding</a>
+      <a class="cte-button" href="cte/programming/data-structures.html">Data Structures</a>
+    </div>
+  </div>
+
+  <!-- Commercial and Advertising Art -->
+  <div>
+    <div class="course-item program-toggle" onclick="toggleCourses(this)">Commercial and Advertising Art</div>
+    <div class="course-list">
+      <a class="cte-button" href="cte/art/digital-illustration.html">Digital Illustration</a>
+      <a class="cte-button" href="cte/art/branding-design.html">Branding & Design</a>
+    </div>
+  </div>
+
+  <!-- Industrial Design & Animation -->
+  <div>
+    <div class="course-item program-toggle" onclick="toggleCourses(this)">Industrial Design & Animation</div>
+    <div class="course-list">
+      <a class="cte-button" href="cte/animation/3d-modeling.html">3D Modeling</a>
+      <a class="cte-button" href="cte/animation/motion-graphics.html">Motion Graphics</a>
+    </div>
+  </div>
+
+  <!-- Wood Technology -->
+  <div>
+    <div class="course-item program-toggle" onclick="toggleCourses(this)">Wood Technology</div>
+    <div class="course-list">
+      <a class="cte-button" href="cte/wood/introduction-to-carpentry.html">Intro to Carpentry</a>
+      <a class="cte-button" href="cte/wood/advanced-woodworking.html">Advanced Woodworking</a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<h3 style="text-align: center; margin-top: 2.5rem; margin-bottom: 1rem; color: #333;">HTHS DFAB Majors</h3>
+
+
+  <!-- Architecture & Design -->
+  <div>
+    <div class="course-item program-toggle" onclick="toggleCourses(this)">Architecture & Design</div>
+    <div class="course-list">
+      <a class="cte-button" href="cte/architecture/intro-to-architecture.html">Intro to Architecture</a>
+      <a class="cte-button" href="cte/architecture/advanced-architecture.html">Advanced Architecture</a>
+    </div>
+  </div>
+
+  <!-- Computer Programming -->
+  <div>
+    <div class="course-item program-toggle" onclick="toggleCourses(this)">Computer Programming</div>
+    <div class="course-list">
+      <a class="cte-button" href="cte/programming/introduction-to-coding.html">Intro to Coding</a>
+      <a class="cte-button" href="cte/programming/data-structures.html">Data Structures</a>
+    </div>
+  </div>
+
+  <!-- Commercial and Advertising Art -->
+  <div>
+    <div class="course-item program-toggle" onclick="toggleCourses(this)">Commercial and Advertising Art</div>
+    <div class="course-list">
+      <a class="cte-button" href="cte/art/digital-illustration.html">Digital Illustration</a>
+      <a class="cte-button" href="cte/art/branding-design.html">Branding & Design</a>
+    </div>
+  </div>
+
+  <!-- Industrial Design & Animation -->
+  <div>
+    <div class="course-item program-toggle" onclick="toggleCourses(this)">Industrial Design & Animation</div>
+    <div class="course-list">
+      <a class="cte-button" href="cte/animation/3d-modeling.html">3D Modeling</a>
+      <a class="cte-button" href="cte/animation/motion-graphics.html">Motion Graphics</a>
+    </div>
+  </div>
+
+  <!-- Wood Technology -->
+  <div>
+    <div class="course-item program-toggle" onclick="toggleCourses(this)">Wood Technology</div>
+    <div class="course-list">
+      <a class="cte-button" href="cte/wood/introduction-to-carpentry.html">Intro to Carpentry</a>
+      <a class="cte-button" href="cte/wood/advanced-woodworking.html">Advanced Woodworking</a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+</section>
+  </main>
+
+  <footer>
+    <p>© 2024 HCST District. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleCourses(element) {
+      const courseList = element.nextElementSibling;
+      courseList.style.display = courseList.style.display === "flex" ? "none" : "flex";
+    }
+  </script>
+  </div>
+</body>
+</html>

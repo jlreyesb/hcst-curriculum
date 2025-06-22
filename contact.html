@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Curriculum and Instruction</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      color: #000;
+    }
+
+    header {
+      background: #333333;
+      padding: 1.5rem 2rem;
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      color: #ffffff;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    nav {
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1.2rem;
+    }
+
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #d4af37;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .contact-card {
+      background: linear-gradient(-45deg, #f1c40f, #1a1a1a, #d4af37, #1c1c1c);
+      background-size: 400% 400%;
+      animation: gradientFade 35s ease infinite;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      color: white;
+      transition: transform 0.3s ease;
+    }
+
+    @keyframes gradientFade {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .contact-card:hover {
+      transform: scale(1.03);
+    }
+
+    .contact-card h2 {
+      margin-bottom: 0.5rem;
+      color: #fbe18b;
+    }
+
+    .contact-card p {
+      margin: 0.4rem 0;
+      font-size: 1rem;
+      color: #ffffff;
+    }
+
+    .contact-card a {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        position: static;
+        text-align: center;
+        margin-top: 1rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .contact-card {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <header style="background-color: #333333; color: #ffffff; padding: 3rem; text-align: center;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
+          <h1 style="font-size: 2rem; margin: 0;">Curriculum & Instruction Contact Directory</h1>
+          <nav>
+            <ul style="display: flex; gap: 1.5rem; list-style: none; padding: 0; margin: 0;">
+                <li><a href="../index.html">Home</a></li>
+        <li><a href="../documents.html">Documents</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+  <div class="container">
+    <div class="contact-card">
+      <h2>Steven Ricciardi</h2>
+      <p>Director of Curriculum and Instruction</p>
+      <p>Phone: 201-662-6705</p>
+      <p>Email: <a href="mailto:sricciar@hcstonline.org">sricciar@hcstonline.org</a></p>
+    </div>
+
+    <div class="contact-card">
+      <h2>Chris Cassaro</h2>
+      <p>Supervisor of Student Support Services</p>
+      <p>Phone: 201-662-6800 x 8301</p>
+      <p>Email: <a href="mailto:ccassaro@hcstonline.org">ccassaro@hcstonline.org</a></p>
+    </div>
+
+    <div class="contact-card">
+      <h2>Kiki Garcia</h2>
+      <p>Office of Curriculum and Instruction</p>
+      <p>Phone: 201-662-6716</p>
+      <p>Email: <a href="mailto:lgarcia2@hcstonline.org">lgarcia2@hcstonline.org</a></p>
+    </div>
+
+    <div class="contact-card">
+      <h2>Tony Gongora</h2>
+      <p>Office of Curriculum and Instruction</p>
+      <p>Phone: 201-662-6800 x 8229</p>
+      <p>Email: <a href="mailto:pgongora@hcstonline.org">pgongora@hcstonline.org</a></p>
+    </div>
+
+    <div class="contact-card">
+      <h2>ToniAnn Mendolla</h2>
+      <p>Secretary</p>
+      <p>Phone: 201-662-6319</p>
+      <p>Email: <a href="mailto:tmendolla@hcstonline.org">tmendolla@hcstonline.org</a></p>
+    </div>
+
+    <div class="contact-card">
+        <h2>Jorge Reyes</h2>
+        <p>Website Designer and Developer</p>
+        <p>Phone: 201-708-3146</p>
+        <p>Email: <a href="mailto:tmendolla@hcstonline.org">jlreyesb16@gmail.com</a></p>
+      </div>
+
+  </div>
+
+  
+  <footer>
+    <p>© 2024 HCST District. All rights reserved.</p>
+  </footer>
+</body>
+</html>
