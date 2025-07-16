@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CTE Programs</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .program-toggle {
+      cursor: pointer;
+      margin-top: 25px;
+    }
+
+   .course-list {
+  display: none;
+  flex-wrap: wrap;
+  gap: 16px; /* adds spacing between boxes */
+  margin: 15px 0 30px 0;
+}
+
+.details h3 {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333333;
+}
+
+
+.cte-button {
+  background-color: #e5e7eb;
+  color: #1f2937;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  border: 1px solid #d1d5db;
+  display: inline-block;
+  min-width: 160px; /* ensures consistent button size */
+  text-align: center;
+}
+
+    .cte-button:hover {
+      background-color: #d4af37;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-container">
+  <header>
+    <div class="logo">
+      <h1>HCST Curriculum</h1>
+    </div>
+    <nav>
+      <ul>
+         <li><a href="../index.html">Home</a></li>
+        <li><a href="../documents.html">Documents</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+
+ <section class="details">
+  <h2>Career Technical Education (CTE) Programs</h2>
+
+<h3 style="text-align: center; margin-top: 2.5rem; margin-bottom: 1rem; color: #333;">Bayonne Academy Programs of Study</h3>
+
+
+<!-- Carpentry/Carpenter -->
+  <div>
+    <div class="course-item program-toggle" onclick="toggleCourses(this)">Carpentry/Carpenter (460201)</div>
+    <div class="course-list">
+      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68718/units">Carpentry I</a>
+      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68985/units">Carpentry II</a>
+      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68986/units">Carpentry III</a>
+      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68987/units">Carpentry IV</a>
+    </div>
+  </div>
+
+  
+
+
+</section>
+  </main>
+
+  <footer>
+    <p>© 2024 HCST District. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleCourses(element) {
+      const courseList = element.nextElementSibling;
+      courseList.style.display = courseList.style.display === "flex" ? "none" : "flex";
+    }
+  </script>
+  </div>
+</body>
+</html>
