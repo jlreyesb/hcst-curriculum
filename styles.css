@@ -380,7 +380,70 @@ main {
   transform: translateX(6px);
 }
 
+/* Custom styles for smooth dropdown transition */
+.dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.dropdown-content.active {
+    max-height: 150px; /* Adjusted to make the dropdown content smaller when open */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: max-height 0.5s ease-in, padding 0.5s ease-in;
+}
+
+/* Styling for dropdown buttons to match original course-item style */
+.course-item-dropdown .course-dropdown-button {
+    background-color: #d4af37; /* amber/gold */
+    color: #1f2937; /* dark gray text */
+    padding: 1.8rem 1.8rem;/* Reduced vertical padding to make it smaller when collapsed */
+    font-size: 1.25rem; /* Match course-item font size */
+    border-radius: 6px; /* Match course-item border-radius */
+    font-weight: 600; /* Match course-item font-weight */
+    text-decoration: none; /* Ensure no underline */
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%; /* Ensure it takes full width of its grid cell */
+    text-align: left; /* Keep text left-aligned */
+    display: flex; /* For flexbox alignment of text and icon */
+    justify-content: space-between; /* Space between text and icon */
+    align-items: center; /* Center items vertically */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Indicate it's clickable */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add subtle shadow */
+}
+
+.course-item-dropdown .course-dropdown-button:hover {
+    background-color: #fdd244; /* lighter hover */
+    transform: translateX(6px); /* Match course-item hover effect */
+}
+
+/* Style for the dropdown content area itself within course items */
+.course-item-dropdown .course-dropdown-content {
+    background-color: white; /* Keep white background for content */
+    color: #6b7280; /* Keep gray text for content */
+    font-size: 1.1rem; /* Match course-item font size */
+    transform: translateX(6px); /* Match course-item hover effect */
+    border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add subtle shadow */
+    border-top: 1px solid #e2e8f0; /* Subtle border at the top of content */
+}
+
+/* Styles for the text within the dropdown content */
+.dropdown-content p {
+    font-size: 1.1rem; /* Make text larger */
+    text-align: center; /* Center the text */
+}
+
+/* Adjust margin for the link paragraph to keep it aligned */
+.dropdown-content p.mt-4 {
+    margin-top: 1.5rem; /* Increased margin to add more space */
+    text-align: center; /* Center the link as well */
+}
 
 
-
-
+/* Rotate SVG icon when dropdown is active */
+.dropdown-toggle.active svg {
+    transform: rotate(180deg);
+}
