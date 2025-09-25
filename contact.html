@@ -4,60 +4,70 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact | Curriculum and Instruction</title>
-  <link rel="stylesheet" href="../styles.css" />
   <style>
+    /* Reset & Page Structure */
+    body, h1, h2, h3, p, ul, li {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: white;
+      line-height: 1.6;
+      background-color: #f4f4f4;
       color: #000;
     }
-
-    header {
-      background: #333333;
-      padding: 1.5rem 2rem;
-      position: relative;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.8rem;
-      color: #ffffff;
-      letter-spacing: 1px;
-      text-align: center;
-    }
-
-    nav {
-      position: absolute;
-      top: 1.5rem;
-      right: 2rem;
-    }
-
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
+    .page-container {
       display: flex;
-      gap: 1.2rem;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main {
+      flex: 1;
+      padding: 2rem 1rem;
     }
 
+    /* Consistent Header from Style Guide */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333333;
+      color: #ffffff;
+      padding: 1rem 2rem;
+    }
+    header .logo h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    /* Consistent Navigation from Style Guide */
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+    nav ul li {
+      margin: 0 1rem;
+    }
     nav ul li a {
       color: #ffffff;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s;
     }
-
     nav ul li a:hover {
       color: #d4af37;
     }
-
+    
+    /* Contact Card Styling */
     .container {
       max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      margin: 0 auto;
     }
-
     .contact-card {
       background: linear-gradient(-45deg, #f1c40f, #1a1a1a, #d4af37, #1c1c1c);
       background-size: 400% 400%;
@@ -78,116 +88,113 @@
     }
 
     .contact-card:hover {
-      transform: scale(1.03);
+      transform: scale(1.02);
     }
-
     .contact-card h2 {
       margin-bottom: 0.5rem;
       color: #fbe18b;
     }
-
     .contact-card p {
       margin: 0.4rem 0;
       font-size: 1rem;
       color: #ffffff;
     }
-
     .contact-card a {
       color: #ffd700;
       text-decoration: none;
       font-weight: bold;
     }
-
     .contact-card a:hover {
       text-decoration: underline;
     }
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
+    /* Consistent Footer from Style Guide */
+    footer {
+      background-color: #000000;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
 
-      nav {
-        position: static;
-        text-align: center;
-        margin-top: 1rem;
-      }
-
-      nav ul {
+    /* Mobile Responsive Styles */
+    @media (max-width: 768px) {
+      header {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 1rem;
       }
-
-      .contact-card {
-        padding: 1rem;
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem 1rem;
       }
     }
   </style>
 </head>
 <body>
 
+  <div class="page-container">
     <header>
       <div class="logo">
         <h1>HCST Curriculum</h1>
       </div>
-          <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../documents.html">Gifted & Talanted</a></li>
-                <li><a href="../documents.html">Dual Enrollment</a></li>
-                <li><a href="../documents.html">Documents</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-            </ul>
-          </nav>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../giftedtalented.html">Gifted & Talented</a></li>
+          <li><a href="../dualenrollment.html">Dual Enrollment</a></li>
+          <li><a href="../documents.html">Documents</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="contact-card">
+          <h2>Steven Ricciardi</h2>
+          <p>Director of Curriculum and Instruction</p>
+          <p>Phone: 201-662-6705</p>
+          <p>Email: <a href="mailto:sricciar@hcstonline.org">sricciar@hcstonline.org</a></p>
         </div>
-      </header>
 
-  <div class="container">
-    <div class="contact-card">
-      <h2>Steven Ricciardi</h2>
-      <p>Director of Curriculum and Instruction</p>
-      <p>Phone: 201-662-6705</p>
-      <p>Email: <a href="mailto:sricciar@hcstonline.org">sricciar@hcstonline.org</a></p>
-    </div>
+        <div class="contact-card">
+          <h2>Chris Cassaro</h2>
+          <p>Supervisor of Student Support Services</p>
+          <p>Phone: 201-662-6800 x 8301</p>
+          <p>Email: <a href="mailto:ccassaro@hcstonline.org">ccassaro@hcstonline.org</a></p>
+        </div>
 
-    <div class="contact-card">
-      <h2>Chris Cassaro</h2>
-      <p>Supervisor of Student Support Services</p>
-      <p>Phone: 201-662-6800 x 8301</p>
-      <p>Email: <a href="mailto:ccassaro@hcstonline.org">ccassaro@hcstonline.org</a></p>
-    </div>
+        <div class="contact-card">
+          <h2>Kiki Garcia</h2>
+          <p>Office of Curriculum and Instruction</p>
+          <p>Phone: 201-662-6716</p>
+          <p>Email: <a href="mailto:lgarcia2@hcstonline.org">lgarcia2@hcstonline.org</a></p>
+        </div>
 
-    <div class="contact-card">
-      <h2>Kiki Garcia</h2>
-      <p>Office of Curriculum and Instruction</p>
-      <p>Phone: 201-662-6716</p>
-      <p>Email: <a href="mailto:lgarcia2@hcstonline.org">lgarcia2@hcstonline.org</a></p>
-    </div>
+        <div class="contact-card">
+          <h2>Tony Gongora</h2>
+          <p>Office of Curriculum and Instruction</p>
+          <p>Phone: 201-662-6800 x 8229</p>
+          <p>Email: <a href="mailto:pgongora@hcstonline.org">pgongora@hcstonline.org</a></p>
+        </div>
 
-    <div class="contact-card">
-      <h2>Tony Gongora</h2>
-      <p>Office of Curriculum and Instruction</p>
-      <p>Phone: 201-662-6800 x 8229</p>
-      <p>Email: <a href="mailto:pgongora@hcstonline.org">pgongora@hcstonline.org</a></p>
-    </div>
+        <div class="contact-card">
+          <h2>ToniAnn Mendolla</h2>
+          <p>Secretary</p>
+          <p>Phone: 201-662-6319</p>
+          <p>Email: <a href="mailto:tmendolla@hcstonline.org">tmendolla@hcstonline.org</a></p>
+        </div>
 
-    <div class="contact-card">
-      <h2>ToniAnn Mendolla</h2>
-      <p>Secretary</p>
-      <p>Phone: 201-662-6319</p>
-      <p>Email: <a href="mailto:tmendolla@hcstonline.org">tmendolla@hcstonline.org</a></p>
-    </div>
-
-    <div class="contact-card">
-        <h2>Jorge Reyes Class of 2025</h2>
-        <p>Website Designer and Developer</p>
+        <div class="contact-card">
+          <h2>Jorge Reyes Class of 2025</h2>
+          <p>Website Designer and Developer</p>
+        </div>
       </div>
+    </main>
 
+    <footer>
+        <p>&copy; 2025 Hudson County Schools of Technology. All Rights Reserved.</p>
+    </footer>
   </div>
-
-  
-  <footer>
-    <p>© 2024 HCST District. All rights reserved.</p>
-  </footer>
 </body>
 </html>
