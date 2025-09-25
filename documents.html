@@ -1,69 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Curriculum Documents</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documents</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
+    /* --- Style Guide CSS --- */
+    @keyframes gradientFade {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    @keyframes wave {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Reset */
+    body, h1, h2, h3, p, ul, li {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
     body {
-      background-color: #f5f5f5;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4; /* A light grey for better card contrast */
+      color: #000000;
     }
-
-    .documents-section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .documents-section h2 {
-      text-align: center;
-      margin-bottom: 2rem;
-      color: #1f2937;
-    }
-
-    .document-list {
+    .page-container {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      min-height: 100vh;
+    }
+    main {
+      flex: 1;
+      padding: 2rem 1rem;
     }
 
-    .document-item {
+    /* Header */
+    header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #fff8dc;
-      border: 2px solid #f6e27f;
-      border-radius: 10px;
-      padding: 1rem 1.5rem;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      background-color: #333333;
+      color: #ffffff;
+      padding: 1rem 2rem;
+    }
+    header .logo h1 {
+      font-size: 1.5rem;
     }
 
-    .document-item:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      background-color: #fff4b2;
+    /* Navigation */
+    nav ul {
+      display: flex;
+      list-style: none;
     }
-
-    .document-title {
-      font-weight: 600;
-      color: #1f2937;
+    nav ul li {
+      margin: 0 1rem;
     }
-
-    .document-item a {
-      background-color: #fcd34d;
-      color: #000;
+    nav ul li a {
+      color: #ffffff;
       text-decoration: none;
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
-      font-weight: 600;
-      transition: background-color 0.2s ease;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #d4af37;
+    }
+    
+    /* Card Styling */
+    .card {
+      border: 2px solid #d4af37;
+      padding: 25px 30px;
+      border-radius: 5px;
+      background-color: #ffffff;
+      max-width: 960px; 
+      text-align: left;
+      margin: 0 auto 25px auto; /* Centering the card */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .card h2 {
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #eee;
+    }
+    
+    /* Button Link */
+    .button-link {
+      background-color: #f7e18c; /* lighter yellow */
+      color: #000;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    .button-link:hover {
+      background-color: #f5d858; /* slightly darker on hover */
+      color: #000;
     }
 
-    .document-item a:hover {
-      background-color: #d4af37;
-      color: #000;
+    /* NEW: Document List Styling */
+    .document-list {
+        list-style: none;
+        padding: 0;
+        margin-top: 1.5rem;
+    }
+    .document-list li {
+        border-bottom: 1px solid #eee;
+        transition: background-color 0.2s ease-in-out;
+    }
+    .document-list li:last-child {
+        border-bottom: none;
+    }
+    .document-list li:hover {
+        background-color: #fdfaf2;
+    }
+    .document-list a {
+        display: block;
+        padding: 15px 10px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+    .document-list a:hover {
+        color: #d4af37;
+    }
+    .document-list a .fas { /* Style for the Font Awesome icon */
+        margin-right: 15px;
+        color: #d4af37;
+        width: 20px; /* Aligns text neatly */
+    }
+
+    /* Footer */
+    footer {
+      background-color: #000000;
+      color: white;
+      text-align: center;
+      padding: 1rem;
     }
   </style>
 </head>
@@ -75,37 +159,67 @@
       </div>
       <nav>
         <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../documents.html">Gifted & Talanted</a></li>
-        <li><a href="../documents.html">Dual Enrollment</a></li>
-        <li><a href="../documents.html">Documents</a></li>
-        <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../giftedtalented.html">Gifted & Talented</a></li>
+          <li><a href="../dualenrollment.html">Dual Enrollment</a></li>
+          <li><a href="../documents.html">Documents</a></li>
+          <li><a href="../contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="documents-section">
-        <h2>Curriculum Documents</h2>
-        <div class="document-list">
-          <div class="document-item">
-            <span class="document-title">Lesson Planning Template</span>
-            <a href="https://docs.google.com/document/d/1D4ppA1bOmr3AakkAkbOjTynyIZ6d-UhuyiJPY0SxyVs/copy" target="_blank" >View PDF</a>
-          </div>
-          <div class="document-item">
-            <span class="document-title">New Instructional Materials - Approval Form</span>
-            <a href="https://docs.google.com/document/d/1nB81jpuHaoDmcazqBtKC4pAUHcuRa2gJ/edit?usp=sharing&ouid=115441632132525025769&rtpof=true&sd=true" target="_blank">View PDF</a>
-          </div>
-          <div class="document-item">
-            <span class="document-title">New Course Approval Form</span>
-            <a href="https://docs.google.com/document/d/1IyChhpROjP0JbqNIpZtjwU6ysEuYCQlE/edit?usp=sharing&ouid=115441632132525025769&rtpof=true&sd=true" target="_blank">View PDF</a>
-          </div>
-        </div>
+      <section id="documents" class="card">
+        <h2>District & School Documents</h2>
+        <p>Here you will find important documents, forms, and resources for students, parents, and staff. </p>
+        
+        <ul class="document-list">
+          <li>
+            <a href="https://drive.google.com/file/d/1fPATMUNjrk9IlxuxDJ50xlDnImQ0Vrp3/view?usp=sharing" target="_blank">District Calendar 2025-2026</a>
+          </li>
+          <li>
+            <a href="https://docs.google.com/spreadsheets/d/1SRyoeRuGkknwYShIT1fT6p9SIHwNfzVQzSlBg4gsmWA/edit?usp=sharing" target="_blank">District Testing Calender 2025-2026</a>
+          </li>
+          <li>
+            <a href="https://sites.google.com/hcstonline.org/hcst-option-ii/" target="_blank">Option II Application</a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1T5mP_CX5Mc3SkVGLSCHniJqxwBxSQWjy/view?usp=sharing" target="_blank">NJDOE - School Performance Report - Detailed</a>
+          </li>
+          <li>
+            <a href="https://www.nj.gov/education/spr/tableau_dashboard.shtml?CountyCode=17&DistrictCode=2295&SchoolCode=304&viewType=district&rptType_d=7" target="_blank">NJDOE - School Performance Report - Summary</a>
+          </li>
+          <li>
+            <a href="https://docs.google.com/document/d/19ZuxQ7OyNqwJPlFwFmSeUbrRJySec_JzflokkUwq2Ug/edit?usp=sharing" target="_blank">HCST Assessment Security Plan</a>
+          </li>
+          <li>
+            <a href="https://docs.google.com/presentation/d/184gHGqSEClo5dR9-My2i6Ra_XmQZ8Ore/edit?usp=sharing&ouid=115441632132525025769&rtpof=true&sd=true" target="_blank">NJSLA 2024 Results</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">NJSLA 2025 Results</a>
+          </li>
+          <li>
+            <a href="https://docs.google.com/presentation/d/1Ccm-OKHq_mQYxdgkIzb8l7cVA7aWUolPsSkGz5UUzu0/edit?usp=sharing" target="_blank">NJGPA 2024 Results</a>
+          </li>
+          <li>
+            <a href="https://docs.google.com/presentation/d/1FO0Y4Kz4DAdPJSmk1sm2WGNdjQmzpJO8I8EjvRiToG8/edit?usp=sharing" target="_blank">NJGPA 2025 Results</a>
+          </li>
+          <li>
+            <a href="https://nj.portal.cambiumast.com/" target="_blank">Cambian resources</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Parental Notifaction</a>
+          </li>
+          <li>
+            <a href="https://www.nj.gov/education/assessment/requirements/2023_2025.shtml" target="_blank">Alternative Assessment Pathways</a>
+          </li>
+        </ul>
       </section>
-    </main>
 
+    </main>
+    
     <footer>
-      <p>© 2024 HCST District. All rights reserved.</p>
+        <p>&copy; 2025 Hudson County Schools of Technology. All Rights Reserved.</p>
     </footer>
   </div>
 </body>

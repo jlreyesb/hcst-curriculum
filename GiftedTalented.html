@@ -4,91 +4,215 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gifted and Talented</title>
-  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* --- Style Guide CSS Provided by User --- */
+    @keyframes gradientFade {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    @keyframes wave {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Reset */
+    body, h1, h2, h3, p, ul, li {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4; /* A light grey for better card contrast */
+      color: #000000;
+    }
+    .page-container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main {
+      flex: 1;
+      padding: 2rem 1rem;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333333;
+      color: #ffffff;
+      padding: 1rem 2rem;
+    }
+    header .logo h1 {
+      font-size: 1.5rem;
+    }
+
+    /* Navigation */
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+    nav ul li {
+      margin: 0 1rem;
+    }
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #d4af37;
+    }
+    
+    /* Card Styling - Adapted for this page */
+    .card {
+      border: 2px solid #d4af37;
+      padding: 25px 30px;
+      border-radius: 5px;
+      background-color: #ffffff;
+      max-width: 960px; /* Overriding original 300px for readability */
+      text-align: left;
+      margin: 0 auto 25px auto; /* Centering the card */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .card h2 {
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #eee;
+    }
+    .card ul, .card ol {
+        padding-left: 20px;
+    }
+    .card li {
+        margin-bottom: 10px;
+    }
+    
+    /* Button Link */
+    .button-link {
+      background-color: #f7e18c; /* lighter yellow */
+      color: #000;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    .button-link:hover {
+      background-color: #f5d858; /* slightly darker on hover */
+      color: #000;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #000000;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <h1>HCST Curriculum</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../giftedtalented.html">Gifted & Talanted</a></li>
-        <li><a href="../dualenrollment.html">Dual Enrollment</a></li>
-        <li><a href="../documents.html">Documents</a></li>
-        <li><a href="../contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="page-container">
+    <header>
+      <div class="logo">
+        <h1>HCST Curriculum</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../giftedtalented.html">Gifted & Talented</a></li>
+          <li><a href="../dualenrollment.html">Dual Enrollment</a></li>
+          <li><a href="../documents.html">Documents</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-     <main>
-        <section id="policy">
-            <h2>Policy</h2>
-            <p>The Hudson County Schools of Technology Board of Education is committed to identifying and supporting gifted and talented students within the school district. We recognize the importance of providing these students with appropriate instructional services to ensure their academic and personal growth.</p>
-        </section>
+    <main>
+      <section id="policy" class="card">
+        <h2>Policy</h2>
+        <p>The Hudson County Schools of Technology Board of Education is committed to identifying and supporting gifted and talented students within the school district. We recognize the importance of providing these students with appropriate instructional services to ensure their academic and personal growth.</p>
+      </section>
 
-        <section id="overview">
-            <h2>Overview</h2>
-            <p>In alignment with the “Strengthening Gifted and Talented Education Act” signed into law by Governor Murphy on January 13, 2020, and codified in N.J.A.C. 6A:8-3.1, the Board mandated the identification and support of gifted and talented students across the district.</p>
-        </section>
+      <section id="overview" class="card">
+        <h2>Overview</h2>
+        <p>In alignment with the “Strengthening Gifted and Talented Education Act” signed into law by Governor Murphy on January 13, 2020, and codified in N.J.A.C. 6A:8-3.1, the Board mandated the identification and support of gifted and talented students across the district.</p>
+      </section>
 
-        <section id="definition">
-            <h2>Definition</h2>
-            <p>A gifted and talented student is defined as one who demonstrates a high level of ability in one or more content areas when compared to their chronological peers within the district, and who requires modifications to their educational program to achieve in accordance with their capabilities.</p>
-        </section>
+      <section id="definition" class="card">
+        <h2>Definition</h2>
+        <p>A gifted and talented student is defined as one who demonstrates a high level of ability in one or more content areas when compared to their chronological peers within the district, and who requires modifications to their educational program to achieve in accordance with their capabilities.</p>
+      </section>
 
-        <section id="identification">
-            <h2>Identification Process</h2>
-            <p>The Hudson County Schools of Technology School District will employ a comprehensive approach to identifying gifted and talented students each school year. This process includes:</p>
-            <ul>
-                <li><strong>Multiple Measures:</strong> We will use a variety of indicators and sources of evidence, including student screening, assessments, and other relevant data collected at multiple points throughout the school year.</li>
-                <li><strong>Data Analysis:</strong> The gathered data will be evaluated using a Matrix, which will be analyzed to make informed decisions regarding the identification of gifted and talented students, based on local norms.</li>
-                <li><strong>Equitable Consideration:</strong> The identification process will be inclusive of all students, including English language learners and those with Individualized Education Plans (IEPs) or 504 Plans.</li>
-            </ul>
-        </section>
+      <section id="identification" class="card">
+        <h2>Identification Process</h2>
+        <p>The Hudson County Schools of Technology School District will employ a comprehensive approach to identifying gifted and talented students each school year. This process includes:</p>
+        <ul>
+          <li><strong>Multiple Measures:</strong> We will use a variety of indicators and sources of evidence, including student screening, assessments, and other relevant data collected at multiple points throughout the school year.</li>
+          <li><strong>Data Analysis:</strong> The gathered data will be evaluated using a Matrix, which will be analyzed to make informed decisions regarding the identification of gifted and talented students, based on local norms.</li>
+          <li><strong>Equitable Consideration:</strong> The identification process will be inclusive of all students, including English language learners and those with Individualized Education Plans (IEPs) or 504 Plans.</li>
+        </ul>
+      </section>
 
-        <section id="services">
-            <h2>Service Provision</h2>
-            <p>The goal of identifying gifted and talented students is to provide them with educational services that meet their specific learning needs and maximize their potential. This process will be revisited at the end of each quarter to ensure that students receive the services that best match their evolving academic needs.</p>
-            <p>Students identified as gifted and talented require modifications to the general education curriculum to align with the abilities. By recognizing their intellectual abilities, creativity, or specific academic aptitudes, the district acknowledges the necessity for programming and services beyond the standard grade-level curriculum to enhance their learning experience.</p>
-        </section>
+      <section id="services" class="card">
+        <h2>Service Provision</h2>
+        <p>The goal of identifying gifted and talented students is to provide them with educational services that meet their specific learning needs and maximize their potential. This process will be revisited at the end of each quarter to ensure that students receive the services that best match their evolving academic needs.</p>
+        <p>Students identified as gifted and talented require modifications to the general education curriculum to align with the abilities. By recognizing their intellectual abilities, creativity, or specific academic aptitudes, the district acknowledges the necessity for programming and services beyond the standard grade-level curriculum to enhance their learning experience.</p>
+      </section>
 
-        <section id="criteria">
-            <h2>Criteria</h2>
-            <p>All eligible students (6-12 grades) will be evaluated by the Gifted and Talented Committee, which will review these criteria to identify these students who require modifications to their education.</p>
-            
-            <h3>Incoming Students (6th and 9th Graders)</h3>
-            <ul>
-                <li>Essay from School Application</li>
-                <li>Transcripts from sending school</li>
-                <li>NJSLA Performance/Standardized Test Scores</li>
-                <li>Attendance Records</li>
-                <li>Portfolios/Performances/Auditions (If Applicable)</li>
-            </ul>
+      <section id="criteria" class="card">
+        <h2>Criteria</h2>
+        <p>All eligible students (6-12 grades) will be evaluated by the Gifted and Talented Committee, which will review these criteria to identify these students who require modifications to their education.</p>
+        
+        <h3>Incoming Students (6th and 9th Graders)</h3>
+        <ul>
+          <li>Essay from School Application</li>
+          <li>Transcripts from sending school</li>
+          <li>NJSLA Performance/Standardized Test Scores</li>
+          <li>Attendance Records</li>
+          <li>Portfolios/Performances/Auditions (If Applicable)</li>
+        </ul>
 
-            <h3>Enrolled Students (7th, 8th, 10th-12th Graders)</h3>
-            <ul>
-                <li>Student Checklist, Parent, Teacher Referrals</li>
-                <li>GPA (No Rounding)</li>
-                <li>Course work</li>
-                <li>Attendance Record</li>
-                <li>NJSLA/PSAT/Linkit! Benchmark Assessment</li>
-            </ul>
-        </section>
+        <h3>Enrolled Students (7th, 8th, 10th-12th Graders)</h3>
+        <ul>
+          <li>Student Checklist, Parent, Teacher Referrals</li>
+          <li>GPA (No Rounding)</li>
+          <li>Course work</li>
+          <li>Attendance Record</li>
+          <li>NJSLA/PSAT/Linkit! Benchmark Assessment</li>
+          </ol>
+        <a href="https://docs.google.com/spreadsheets/d/1mtwLSnbARjP5nN4UfJRD2B7Z90aa40b24Bou_Tag4h8/edit?usp=sharing" class="button-link">Gifted and Talented Matrix</a>
+        </ul>
+      </section>
 
-        <section id="complaint-process">
-            <h2>Complaint Process</h2>
-            <p>Any individual who believes that the district has not complied with the provisions in the law or administrative code related to gifted and talented services may file a complaint with the Board.</p>
-            <ol>
-                <li>The complaint shall be submitted in writing to the Board office.</li>
-                <li>The superintendent or designee shall take the necessary actions to correct or remediate the complaint and report such actions to the Board.</li>
-                <li>The Board shall issue a decision, in writing, to affirm, reject, or modify the district’s action in the matter.</li>
-            </ol>
-            <a href="#" class="complaint-button">Parent/Guardian Complaint Form</a>
-        </section>
+      <section id="complaint-process" class="card">
+        <h2>Complaint Process</h2>
+        <p>Any individual who believes that the district has not complied with the provisions in the law or administrative code related to gifted and talented services may file a complaint with the Board.</p>
+        <ol>
+          <li>The complaint shall be submitted in writing to the Board office.</li>
+          <li>The superintendent or designee shall take the necessary actions to correct or remediate the complaint and report such actions to the Board.</li>
+          <li>The Board shall issue a decision, in writing, to affirm, reject, or modify the district’s action in the matter.</li>
+        </ol>
+        <a href="https://drive.google.com/file/d/1nTRznEixLxxwsy6vlvHUxFXU1rvFIN_y/view?usp=sharing" class="button-link">Parent/Guardian Complaint Process</a>
+      </section>
     </main>
+    
+    <footer>
+        <p>&copy; 2025 Hudson County Schools of Technology. All Rights Reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
-   

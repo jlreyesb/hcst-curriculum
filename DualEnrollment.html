@@ -3,22 +3,167 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dual Enrollment</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Dual Enrollment Scholarships</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* --- Style Guide CSS --- */
+    @keyframes gradientFade {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    @keyframes wave {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Reset */
+    body, h1, h2, h3, p, ul, li {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4; /* A light grey for better card contrast */
+      color: #000000;
+    }
+    .page-container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main {
+      flex: 1;
+      padding: 2rem 1rem;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333333;
+      color: #ffffff;
+      padding: 1rem 2rem;
+    }
+    header .logo h1 {
+      font-size: 1.5rem;
+    }
+
+    /* Navigation */
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+    nav ul li {
+      margin: 0 1rem;
+    }
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #d4af37;
+    }
+    
+    /* Card Styling - Adapted for this page */
+    .card {
+      border: 2px solid #d4af37;
+      padding: 25px 30px;
+      border-radius: 5px;
+      background-color: #ffffff;
+      max-width: 960px; /* Overriding original 300px for readability */
+      text-align: left;
+      margin: 0 auto 25px auto; /* Centering the card */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .card h2 {
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #eee;
+    }
+    .card ul, .card ol {
+        padding-left: 20px;
+    }
+    .card li {
+        margin-bottom: 10px;
+    }
+    
+    /* Button Link */
+    .button-link {
+      background-color: #f7e18c; /* lighter yellow */
+      color: #000;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    .button-link:hover {
+      background-color: #f5d858; /* slightly darker on hover */
+      color: #000;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #000000;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <h1>HCST Curriculum</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../giftedtalented.html">Gifted & Talanted</a></li>
-        <li><a href="../dualenrollment.html">Dual Enrollment</a></li>
-        <li><a href="../documents.html">Documents</a></li>
-        <li><a href="../contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="page-container">
+    <header>
+      <div class="logo">
+        <h1>HCST Curriculum</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../giftedtalented.html">Gifted & Talented</a></li>
+          <li><a href="../dualenrollment.html">Dual Enrollment</a></li>
+          <li><a href="../documents.html">Documents</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="scholarships-info" class="card">
+        <h2>Dual Enrollment Scholarships</h2>
+        <p>Our district is proud to offer scholarship opportunities for students participating in the dual enrollment program. These scholarships are designed to alleviate the financial burden of college coursework and reward students for their academic excellence and commitment.</p>
+        <p>Below you will find information regarding available scholarships, eligibility requirements, and application deadlines for the upcoming school year.</p>
+      </section>
+
+      <section id="flyer" class="card">
+        <h2>2025-2026 Scholarship Flyer</h2>
+        <p>Below is the official flyer with a detailed overview of the scholarship program, important dates, and contact information.</p>
+        
+        <img src="images/dualenrollment-flier.png" alt="Dual Enrollment Scholarship Flyer for the 2025-2026 school year" style="width: 100%; height: auto; border-radius: 5px; margin-top: 1rem;">
+        
+        <div style="text-align: center;">
+          <a href="https://forms.hcstonline.org/242245122020033" class="button-link" target="_blank">Scholarship Application Form - Must be Filled out by the Student</a>
+        </div>
+      </section>
+
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Hudson County Schools of Technology. All Rights Reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
