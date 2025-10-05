@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Health & PE Grade 12</title>
+  <title>Health & PE - Grade 12</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-   <div class="page-container">
+  <div class="page-container">
   <header>
     <div class="logo">
       <h1>HCST Curriculum</h1>
@@ -15,7 +16,7 @@
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="../giftedtalented.html">Gifted & Talanted</a></li>
+        <li><a href="../giftedtalented.html">Gifted & Talented</a></li>
         <li><a href="../dualenrollment.html">Dual Enrollment</a></li>
         <li><a href="../documents.html">Documents</a></li>
         <li><a href="../contact.html">Contact</a></li>
@@ -26,23 +27,49 @@
  <main>
     <section class="details">
       <div class="grade-nav-buttons">
-      <a href="Health&PhysEd-grade-11.html" class="button-link back">← Back: Grade 11</a>
-      </div>
+        <a href="Health&PhysEd-grade-11.html" class="button-link">← Previous: Grade 11</a>
+        <span></span> </div>
       <h2>Health and Physical Education - Grade 12</h2>
       <div class="course-list">
-        <a href="https://hcst-5154.chalk.com/public/map/38438/units" target="_blank" class="course-item">Health IV</a>
-        <a href="https://hcst-5154.chalk.com/public/map/38765/units" target="_blank" class="course-item">Physical Education IV</a>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Health IV</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>This senior-level health course focuses on preparing students for lifelong wellness. Topics include community health, consumer advocacy, and navigating the healthcare system. Students will complete a culminating project on a health topic of their choice.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38438/units" target="_blank" class="button-link">View Health IV Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Physical Education IV</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>Physical Education IV offers students maximum choice in designing a personal fitness and recreation program. The course emphasizes self-directed activity, stress management techniques, and leadership roles in organizing and officiating activities.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38765/units" target="_blank" class="button-link">View PE IV Curriculum Map</a>
+            </div>
+        </div>
+
       </div>
     </section>
   </main>
-
-
-
-
-
+  
   <footer>
-    <p>© 2024 HCST District. All rights reserved.</p>
+    <p>&copy; 2025 Hudson County Schools of Technology. All Rights Reserved.</p>
   </footer>
-  </div>
+</div>
+
+<script>
+  function toggleDropdown(button) {
+    button.classList.toggle('active');
+    const content = button.nextElementSibling;
+    content.classList.toggle('active');
+  }
+</script>
+
 </body>
 </html>

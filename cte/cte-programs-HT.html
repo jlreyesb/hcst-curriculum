@@ -3,247 +3,823 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CTE Programs</title>
+  <title>CTE Programs - High Tech/ACTE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="../styles.css">
-  <style>
-    .program-toggle {
-      cursor: pointer;
-      margin-top: 25px;
-    }
-
-   .course-list {
-  display: none;
-  flex-wrap: wrap;
-  gap: 16px; /* adds spacing between boxes */
-  margin: 15px 0 30px 0;
-}
-
-.details h3 {
-  font-size: 1.3rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  color: #333333;
-}
-
-
-.cte-button {
-  background-color: #e5e7eb;
-  color: #1f2937;
-  padding: 12px 20px;
-  border-radius: 10px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: background-color 0.2s ease;
-  border: 1px solid #d1d5db;
-  display: inline-block;
-  min-width: 160px; /* ensures consistent button size */
-  text-align: center;
-}
-
-    .cte-button:hover {
-      background-color: #d4af37;
-      color: #000;
-    }
-  </style>
 </head>
 <body>
   <div class="page-container">
-  <header>
-    <div class="logo">
-      <h1>HCST Curriculum</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../giftedtalented.html">Gifted & Talanted</a></li>
-        <li><a href="../dualenrollment.html">Dual Enrollment</a></li>
-        <li><a href="../documents.html">Documents</a></li>
-        <li><a href="../contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+      <div class="logo">
+        <h1>HCST Curriculum</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../giftedtalented.html">Gifted & Talented</a></li>
+          <li><a href="../dualenrollment.html">Dual Enrollment</a></li>
+          <li><a href="../documents.html">Documents</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-
-
- <section class="details">
-  <h2>Career Technical Education (CTE) Programs</h2>
-
-<h3 style="text-align: center; margin-top: 2.5rem; margin-bottom: 1rem; color: #333;">High Tech/ACTE D-FAB Programs of Study</h3>
+<main>
+      <section class="details">
+      <div class="grade-nav-buttons">
+        <a href="cte-programs-CP.html" class="button-link">← Previous: County Prep/ATD</a>
+        <a href="cte-programs-BA.html" class="button-link">Next: Bayonne Academy →</a>
+      </div>
+        <h2>High Tech/ACTE - Career Technical Education (CTE) Programs of Study </h2>
+       
+ <h3 style="text-align: center; margin-top: 2.5rem; margin-bottom: 1rem; color: #333;">DFAB Programs of Study</h3>
 
   <!-- Architecture & Design -->
-  <div>
-    <div class="course-item program-toggle" onclick="toggleCourses(this)">Architectural Drafting and Architechtural CAD/CADD (151303)</div>
-    <div class="course-list">
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38353/units">Engineering Design (9th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/45138/units">Architecture Studio I (10th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/48244/units">Architecture Studio II (11th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/48249/units">Architecture Studio III (12th Grade)</a>
+  <div class="course-list">
+  <div class="course-item-dropdown">
+    <button class="course-item" onclick="toggleDropdown(this)">
+      <span>Architectural Drafting and Architectural CAD/CADD (151303)</span>
+      <i class="fas fa-chevron-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="sub-course-list">
+        <div class="course-item-dropdown">
+          <button class="sub-course-item" onclick="toggleDropdown(this)">
+            <span>Engineering Design (Grade 9)</span><i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="sub-dropdown-content">
+            <p>Foundational principles of technical drawing, design, and material properties. Students will learn drafting techniques and an introduction to CAD software.</p>
+            <a href="https://hcst-5154.chalk.com/public/map/38353/units" class="button-link" target="_blank">View Engineering Design Curriculum</a>
+          </div>
+        </div>
+        <div class="course-item-dropdown">
+          <button class="sub-course-item" onclick="toggleDropdown(this)">
+            <span>Architecture Studio I (Grade 10)</span><i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="sub-dropdown-content">
+            <p>Introduction to architectural history, theory, and design. Students will develop skills in sketching, model making, and creating 2D architectural plans using CAD.</p>
+            <a href="https://hcst-5154.chalk.com/public/map/45138/units" class="button-link" target="_blank">View Architecture Studio I Curriculum</a>
+          </div>
+        </div>
+        <div class="course-item-dropdown">
+          <button class="sub-course-item" onclick="toggleDropdown(this)">
+            <span>Architecture Studio II (Grade 11)</span><i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="sub-dropdown-content">
+            <p>Focuses on residential design, including space planning, building codes, and material selection. Students will design a complete set of construction documents for a single-family home.</p>
+            <a href="https://hcst-5154.chalk.com/public/map/48244/units" class="button-link" target="_blank">View Architecture Studio II Curriculum</a>
+          </div>
+        </div>
+        <div class="course-item-dropdown">
+          <button class="sub-course-item" onclick="toggleDropdown(this)">
+            <span>Architecture Studio III (Grade 12)</span><i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="sub-dropdown-content">
+            <p>Advanced topics in commercial and sustainable design. Students will work on complex projects, explore advanced 3D modeling software, and prepare a professional portfolio.</p>
+            <a href="https://hcst-5154.chalk.com/public/map/48249/units" class="button-link" target="_blank">View Architecture Studio III Curriculum</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- Wood Technology -->
-  <div>
-    <div class="course-item program-toggle" onclick="toggleCourses(this)">Cabinet Maker & Millwork/Millwright (480703)</div>
-    <div class="course-list">
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38353/units">Engineering Design (9th Grade)</a></a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/39217/units">Wood Technology I (10th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/39228/units">Wood Technology II (11th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/39231/units">Wood Technology III (12th Grade)</a>
+  <div class="course-item-dropdown">
+  <button class="course-item" onclick="toggleDropdown(this)">
+    <span>Cabinet Maker & Millwork/Millwright (480703)</span>
+    <i class="fas fa-chevron-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <div class="sub-course-list">
+
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Engineering Design (Grade 9)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Foundational principles of technical drawing, design, and material properties, including an introduction to CAD software for woodworking.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/38353/units" class="button-link" target="_blank">View Engineering Design Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Wood Technology I (Grade 10)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Introduction to woodworking safety, hand tools, power tools, and basic joinery. Students will complete several small projects to build fundamental skills.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/39217/units" class="button-link" target="_blank">View Wood Technology I Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Wood Technology II (Grade 11)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Focuses on advanced joinery, milling lumber, and the construction of case goods like cabinets and boxes. Students will learn to read and work from detailed plans.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/39228/units" class="button-link" target="_blank">View Wood Technology II Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Wood Technology III (Grade 12)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>A capstone course in fine woodworking and millwork. Students will work on complex, large-scale projects, learn about finishing techniques, and prepare a portfolio of their work.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/39231/units" class="button-link" target="_blank">View Wood Technology III Curriculum</a>
+        </div>
+      </div>
+
     </div>
   </div>
+</div>
 
   <!-- Industrial Design & Animation -->
-  <div>
-    <div class="course-item program-toggle" onclick="toggleCourses(this)">CAD/CADD Drafting and/or Design Technology/Technician (151302)</div>
-    <div class="course-list">
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38353/units">Engineering Design (9th Grade)</a></a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/46180/units">Industrial Design and Animation I (10th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/65288/units">Industrial Design and Animation II (11th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38978/units">Industrial Design and Animation III (12th Grade)</a>
-    </div>
-  </div>
+  <div class="course-item-dropdown">
+  <button class="course-item" onclick="toggleDropdown(this)">
+    <span>CAD/CADD Drafting and/or Design Technology/Technician (151302)</span>
+    <i class="fas fa-chevron-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <div class="sub-course-list">
 
-    <!-- Computer Programming -->
-  <div>
-    <div class="course-item program-toggle" onclick="toggleCourses(this)">Computer Programer, General (110201)</div>
-    <div class="course-list">
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/40105/units">AP Comp Sci Principles (9th Grade)</a></a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/65157/units">Computer Programming I - Python (10th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/65163/units">Computer Programming II - Android (11th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/63918/units">Computer Programming III - Java (12th Grade)</a>
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Engineering Design (Grade 9)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Foundational principles of technical drawing, the design process, and material properties. Students will learn 2D and 3D modeling using CAD software.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/38353/units" class="button-link" target="_blank">View Engineering Design Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Industrial Design and Animation I (Grade 10)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Introduction to the principles of industrial design, sketching, and 3D modeling for product design. Students will learn to create animations of their designs.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/46180/units" class="button-link" target="_blank">View Industrial Design I Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Industrial Design and Animation II (Grade 11)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Focuses on advanced 3D modeling, rendering, and animation techniques. Students will work on complex projects, from concept art to finished animated sequences.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/65288/units" class="button-link" target="_blank">View Industrial Design II Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Industrial Design and Animation III (Grade 12)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>A capstone course where students develop a professional portfolio. Projects will focus on real-world design challenges, advanced animation, and preparing for college or careers in design and animation.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/38978/units" class="button-link" target="_blank">View Industrial Design III Curriculum</a>
+        </div>
+      </div>
+
     </div>
   </div>
+</div>
+
+  <!-- Computer Programming -->
+  <div class="course-item-dropdown">
+  <button class="course-item" onclick="toggleDropdown(this)">
+    <span>Computer Programmer, General (110201)</span>
+    <i class="fas fa-chevron-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <div class="sub-course-list">
+
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>AP Computer Science Principles (Grade 9)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>An introductory college-level course that explores the foundational concepts of computer science and challenges students to explore how computing and technology can impact the world.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/40105/units" class="button-link" target="_blank">View AP CSP Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Computer Programming I - Python (Grade 10)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>This course introduces the fundamentals of programming using the Python language. Topics include variables, data structures, control flow, and object-oriented principles.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/65157/units" class="button-link" target="_blank">View Comp Prog I - Python Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Computer Programming II - Android (Grade 11)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Students will learn to develop mobile applications for the Android platform. The course covers the Android SDK, user interface design, and managing application data and lifecycle.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/65163/units" class="button-link" target="_blank">View Comp Prog II - Android Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Computer Programming III - Java (Grade 12)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>An advanced course focusing on the Java programming language. Students will build complex applications and explore topics such as data structures, algorithms, and advanced object-oriented design.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/63918/units" class="button-link" target="_blank">View Comp Prog III - Java Curriculum</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
 
  <!-- Engerinnering -->
-  <div>
-    <div class="course-item program-toggle" onclick="toggleCourses(this)">Engineering, General (140101)</div>
-    <div class="course-list">
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/40105/units">Engineering Design (9th Grade)</a></a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/65157/units"> (10th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/65163/units"> (11th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/63918/units"> (12th Grade)</a>
+  <div class="course-item-dropdown">
+  <button class="course-item" onclick="toggleDropdown(this)">
+    <span>Engineering, General (140101)</span>
+    <i class="fas fa-chevron-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <div class="sub-course-list">
+
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Engineering Design (Grade 9)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Foundational principles of the engineering design process, technical drawing, and problem-solving. Students will learn 2D and 3D modeling using CAD software.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/40105/units" class="button-link" target="_blank">View Engineering Design Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Principles of Engineering (Grade 10)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Exploration of major engineering disciplines, including mechanical, electrical, and civil. Students work on hands-on projects to understand concepts like energy and statics.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/65157/units" class="button-link" target="_blank">View Principles of Engineering Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Digital Electronics (Grade 11)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Introduction to digital logic, circuit design, and microcontrollers. Students will learn to design and build digital circuits and program small electronic devices.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/65163/units" class="button-link" target="_blank">View Digital Electronics Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Engineering Design and Development (Grade 12)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>A capstone course where students work in teams to design and build a solution to a real-world problem, covering project management, research, and presentation.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/63918/units" class="button-link" target="_blank">View Eng. Design & Dev. Curriculum</a>
+        </div>
+      </div>
+
     </div>
   </div>
+</div>
   
 <!-- Welding -->
-  <div>
-    <div class="course-item program-toggle" onclick="toggleCourses(this)">Welding Technology/Welder (480508)</div>
-    <div class="course-list">
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38353/units">Engineering Design (9th Grade)</a></a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/43369/units">Welding Technology I (10th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/47442/units">Welding Technology II (11th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/47449/units">Welding Technology III (12th Grade)</a>
+  <div class="course-item-dropdown">
+  <button class="course-item" onclick="toggleDropdown(this)">
+    <span>Welding Technology/Welder (480508)</span>
+    <i class="fas fa-chevron-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <div class="sub-course-list">
+
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Engineering Design (Grade 9)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Foundational principles of technical drawing, design, and material properties. Students will learn to read and create blueprints for fabrication.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/38353/units" class="button-link" target="_blank">View Engineering Design Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Welding Technology I (Grade 10)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Introduction to welding safety, equipment, and fundamental techniques in Shielded Metal Arc Welding (SMAW). Students will practice basic joint configurations.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/43369/units" class="button-link" target="_blank">View Welding Technology I Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Welding Technology II (Grade 11)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Focuses on advanced welding processes, including Gas Metal Arc Welding (GMAW/MIG) and Gas Tungsten Arc Welding (GTAW/TIG). Students will work on more complex projects and fabrication.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/47442/units" class="button-link" target="_blank">View Welding Technology II Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Welding Technology III (Grade 12)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>A capstone course covering specialized welding techniques, pipe welding, and destructive/non-destructive testing methods. Prepares students for AWS certification.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/47449/units" class="button-link" target="_blank">View Welding Technology III Curriculum</a>
+        </div>
+      </div>
     </div>
   </div>
+</div>
 
 
-<h3 style="text-align: center; margin-top: 2.5rem; margin-bottom: 1rem; color: #333;">High Tech/ACTE CulSci Programs of Study</h3>
+<h3 style="text-align: center; margin-top: 2.5rem; margin-bottom: 1rem; color: #333;">CulSci Programs of Study</h3>
 
 <!-- Enviornmental -->
-  <div>
-    <div class="course-item program-toggle" onclick="toggleCourses(this)">Agroecology and Sustainable Agriculture (010308)</div>
-    <div class="course-list">
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38382/units">Physical Geology (9th Grade Semester)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/36873/units">Agriculture and Society I (9th Grade Semester)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38919/units">Soil Resources (10th Grade Semester)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/39204/units">Water Resources (10th Grade Semester)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/36897/units">Apiculture I (10th Grade Semester)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/44728/units">Geospatial Technology (10th Grade Semester)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38801/units">Hydroponics (11th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38920/units">Urban Ecology (11th Grade Semester)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38362/units">Enviornmental Field & Research I (11th Grade Semester)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38369/units">Enviornmental Field & Research II (12th Grade Semester)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/40100/units">Enviornmental Public Policy (12th Grade Semester)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38846/units">AP Enviornmental Science (12th Grade)</a>
+  <div class="course-item-dropdown">
+  <button class="course-item" onclick="toggleDropdown(this)">
+    <span>Agroecology and Sustainable Agriculture (010308)</span>
+    <i class="fas fa-chevron-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <div class="sub-course-list">
+
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Physical Geology (Grade 9 Semester)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>An introduction to the materials, structures, and processes that shape the Earth.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/38382/units" class="button-link" target="_blank">View Physical Geology Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Agriculture and Society I (Grade 9 Semester)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Explores the history of agriculture and its impact on human societies and the environment.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/36873/units" class="button-link" target="_blank">View Agriculture and Society I Curriculum</a>
+        </div>
+      </div>
+
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Soil Resources (Grade 10 Semester)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>A study of soil formation, properties, and the principles of soil conservation and management.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/38919/units" class="button-link" target="_blank">View Soil Resources Curriculum</a>
+        </div>
+      </div>
+
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Water Resources (Grade 10 Semester)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Examines the water cycle, water quality, and the management of water resources for agriculture and human use.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/39204/units" class="button-link" target="_blank">View Water Resources Curriculum</a>
+        </div>
+      </div>
+
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Apiculture I (Grade 10 Semester)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>An introduction to beekeeping, covering bee biology, hive management, and the role of pollinators in agriculture.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/36897/units" class="button-link" target="_blank">View Apiculture I Curriculum</a>
+        </div>
+      </div>
+
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Geospatial Technology (Grade 10 Semester)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Students learn to use geographic information systems (GIS) and GPS technology to analyze and map environmental data.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/44728/units" class="button-link" target="_blank">View Geospatial Technology Curriculum</a>
+        </div>
+      </div>
+
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Hydroponics (Grade 11)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>A course on the method of growing plants without soil, covering nutrient solution management and system design.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/38801/units" class="button-link" target="_blank">View Hydroponics Curriculum</a>
+        </div>
+      </div>
+
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Urban Ecology (Grade 11 Semester)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>The study of ecosystems within urban environments, focusing on the interactions between human populations and the natural world in cities.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/38920/units" class="button-link" target="_blank">View Urban Ecology Curriculum</a>
+        </div>
+      </div>
+
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Environmental Field & Research I (Grade 11 Semester)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Hands-on field experience where students learn research methodologies, data collection techniques, and analysis of local ecosystems.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/38362/units" class="button-link" target="_blank">View Env. Research I Curriculum</a>
+        </div>
+      </div>
+
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Environmental Field & Research II (Grade 12 Semester)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>A capstone research project where students design and conduct an independent environmental study, culminating in a formal research paper and presentation.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/38369/units" class="button-link" target="_blank">View Env. Research II Curriculum</a>
+        </div>
+      </div>
+
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Environmental Public Policy (Grade 12 Semester)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>An examination of the laws, regulations, and policies that govern environmental protection and resource management.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/40100/units" class="button-link" target="_blank">View Env. Public Policy Curriculum</a>
+        </div>
+      </div>
+
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>AP Environmental Science (Grade 12)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>A college-level course designed to provide students with the scientific principles, concepts, and methodologies required to understand the interrelationships of the natural world.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/38846/units" class="button-link" target="_blank">View AP Env. Science Curriculum</a>
+        </div>
+      </div>
     </div>
   </div>
+</div>
 
   <!-- Culinary -->
-  <div>
-    <div class="course-item program-toggle" onclick="toggleCourses(this)">Culinary Arts/Chef Training (120503)</div>
-    <div class="course-list">
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/37221/units">Culinary I: Exploration of Restaurant, Food, and Beverage Services (9th Grade)</a></a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/39831/units">Culinary II: Food Services (10th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38293/units">Culinary Arts Specialty (11th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/39162/units">Restaurant/Food/Beverage Services Comprehensive (12th Grade)</a>
+  <div class="course-item-dropdown">
+  <button class="course-item" onclick="toggleDropdown(this)">
+    <span>Culinary Arts/Chef Training (120503)</span>
+    <i class="fas fa-chevron-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <div class="sub-course-list">
+
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Culinary I: Exploration of Restaurant, Food, and Beverage Services (Grade 9)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Introduction to kitchen safety, sanitation, basic knife skills, and fundamental cooking techniques. Students will explore the basics of a professional kitchen environment.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/37221/units" class="button-link" target="_blank">View Culinary I Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Culinary II: Food Services (Grade 10)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Focuses on stocks, sauces, meat fabrication, and various cooking methods. Students will gain hands-on experience in a food service setting.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/39831/units" class="button-link" target="_blank">View Culinary II Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Culinary Arts Specialty (Grade 11)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Exploration of specialized culinary areas, such as baking and pastry, garde manger, and international cuisines. Emphasis on plate presentation and menu development.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/38293/units" class="button-link" target="_blank">View Culinary Arts Specialty Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Restaurant/Food/Beverage Services Comprehensive (Grade 12)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>A capstone course covering front-of-house operations, cost control, inventory management, and the business of running a restaurant.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/39162/units" class="button-link" target="_blank">View Restaurant Services Curriculum</a>
+        </div>
+      </div>
+
     </div>
   </div>
+</div>
 
   
- <h3 style="text-align: center; margin-top: 2.5rem; margin-bottom: 1rem; color: #333;">High Tech/ACTE Arts Academy Programs of Study</h3>
+ <h3 style="text-align: center; margin-top: 2.5rem; margin-bottom: 1rem; color: #333;">The Arts Academy Programs of Study</h3>
 
 
   <!-- Dance -->
-  <div>
-    <div class="course-item program-toggle" onclick="toggleCourses(this)">Dance, General (500301)</div>
-    <div class="course-list">
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38298/units">Dance I (9th Grade)</a></a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38321/units">Dance II (10th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38323/units">Dance III (11th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38324/units">Dance IV (12th Grade)</a>
+  <div class="course-item-dropdown">
+  <button class="course-item" onclick="toggleDropdown(this)">
+    <span>Dance, General (500301)</span>
+    <i class="fas fa-chevron-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <div class="sub-course-list">
+
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Dance I (Grade 9)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Introduction to the fundamentals of dance, including basic techniques in ballet, jazz, and modern. The course focuses on developing body awareness, coordination, and rhythm.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/38298/units" class="button-link" target="_blank">View Dance I Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Dance II (Grade 10)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Builds upon foundational skills with an emphasis on intermediate techniques and choreography. Students will explore improvisation and begin to develop their own movement sequences.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/38321/units" class="button-link" target="_blank">View Dance II Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Dance III (Grade 11)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Advanced study of dance technique and performance. Students will learn complex choreography, study dance history, and participate in ensemble performances.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/38323/units" class="button-link" target="_blank">View Dance III Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Dance IV (Grade 12)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>A pre-professional course focused on portfolio development and audition preparation. Students will choreograph and perform a capstone piece, and explore career pathways in dance.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/38324/units" class="button-link" target="_blank">View Dance IV Curriculum</a>
+        </div>
+      </div>
+
     </div>
   </div>
+</div>
 
   <!-- Theatre Arts -->
-  <div>
-    <div class="course-item program-toggle" onclick="toggleCourses(this)">Drama & Dramatics, Theatre Arts, General (500501)</div>
-    <div class="course-list">
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/45246/units">Theatre Arts I (9th Grade)</a></a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/45345/units">Theatre Arts II (10th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/45353/units">Theatre Arts III (11th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/45355/units">Theatre Arts IV (12th Grade)</a>
+  <div class="course-item-dropdown">
+  <button class="course-item" onclick="toggleDropdown(this)">
+    <span>Drama & Dramatics, Theatre Arts, General (500501)</span>
+    <i class="fas fa-chevron-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <div class="sub-course-list">
+
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Theatre Arts I (Grade 9)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Introduction to the fundamentals of acting, including voice, movement, and improvisation. Students will also explore the basics of theatre history and stagecraft.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/45246/units" class="button-link" target="_blank">View Theatre Arts I Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Theatre Arts II (Grade 10)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Focuses on character development and scene study. Students will work with scripts from various genres and begin to develop their skills in script analysis and performance.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/45345/units" class="button-link" target="_blank">View Theatre Arts II Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Theatre Arts III (Grade 11)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Advanced study in acting techniques and an introduction to directing. Students will participate in a major production and may direct one-act scenes.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/45353/units" class="button-link" target="_blank">View Theatre Arts III Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Theatre Arts IV (Grade 12)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>A pre-professional course focused on audition techniques, portfolio development, and exploring career pathways in theatre. Students will create and perform a capstone solo or ensemble piece.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/45355/units" class="button-link" target="_blank">View Theatre Arts IV Curriculum</a>
+        </div>
+      </div>
+
     </div>
   </div>
+</div>
 
   <!-- Interactive Media -->
-  <div>
-    <div class="course-item program-toggle" onclick="toggleCourses(this)">Digital Communications & Media/Multimedia (90702)</div>
-    <div class="course-list">
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/39146/units">Interactive Media I (9th Grade)</a></a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/39148/units">Interactive Media II (10th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/39154/units">Interactive Media III (11th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/39168/units">Interactive Media IV (12th Grade)</a>
+  <div class="course-item-dropdown">
+  <button class="course-item" onclick="toggleDropdown(this)">
+    <span>Digital Communications & Media/Multimedia (90702)</span>
+    <i class="fas fa-chevron-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <div class="sub-course-list">
+
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Interactive Media I (Grade 9)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Introduction to the principles of digital media, including graphic design, web development, and video production. Students will learn foundational skills in Adobe Creative Suite.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/39146/units" class="button-link" target="_blank">View Interactive Media I Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Interactive Media II (Grade 10)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Focuses on web design and development, covering HTML, CSS, and an introduction to JavaScript. Students will design and build interactive websites.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/39148/units" class="button-link" target="_blank">View Interactive Media II Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Interactive Media III (Grade 11)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Advanced topics in animation and motion graphics using Adobe After Effects. Students will also explore user interface (UI) and user experience (UX) design principles.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/39154/units" class="button-link" target="_blank">View Interactive Media III Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Interactive Media IV (Grade 12)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>A capstone course centered on portfolio development. Students will create a comprehensive, interactive digital project that showcases their skills in design, animation, and web development.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/39168/units" class="button-link" target="_blank">View Interactive Media IV Curriculum</a>
+        </div>
+      </div>
+
     </div>
   </div>
+</div>
 
   <!-- Graphic Design -->
-  <div>
-    <div class="course-item program-toggle" onclick="toggleCourses(this)">Graphic Design (500409)</div>
-    <div class="course-list">
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38389/units">Graphic Technology I (9th Grade)</a></a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38390/units">Graphic Technology II (10th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38391/units">Graphic Technology III (11th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/40097/units">Graphic Technology IV (12th Grade)</a>
+  <div class="course-item-dropdown">
+  <button class="course-item" onclick="toggleDropdown(this)">
+    <span>Graphic Design (500409)</span>
+    <i class="fas fa-chevron-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <div class="sub-course-list">
+
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Graphic Technology I (Grade 9)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Introduction to the elements of art and principles of design. Students will develop foundational skills in Adobe Photoshop and Illustrator.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/38389/units" class="button-link" target="_blank">View Graphic Technology I Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Graphic Technology II (Grade 10)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Focuses on typography, color theory, and layout design. Students will create vector graphics for logos and illustrations.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/38390/units" class="button-link" target="_blank">View Graphic Technology II Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Graphic Technology III (Grade 11)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Advanced projects in branding, advertising, and publication design using Adobe InDesign. Emphasis on creating a cohesive brand identity.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/38391/units" class="button-link" target="_blank">View Graphic Technology III Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Graphic Technology IV (Grade 12)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Portfolio development and capstone projects that simulate real-world client work. Prepares students for college-level design programs and careers.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/40097/units" class="button-link" target="_blank">View Graphic Technology IV Curriculum</a>
+        </div>
+      </div>
+
     </div>
   </div>
+</div>
 
   <!-- AV Production -->
-  <div>
-    <div class="course-item program-toggle" onclick="toggleCourses(this)">Radio and Television Broadcasting Technology/Technician	(100202)</div>
-    <div class="course-list">
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/36914/units">Audio/Visual Production I (9th Grade)</a></a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/36915/units">Audio/Visual Production II (10th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/36920/units">Audio/Visual Production III (11th Grade)</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/36924/units">Audio/Visual Production IV (12th Grade)</a>
+  <div class="course-item-dropdown">
+  <button class="course-item" onclick="toggleDropdown(this)">
+    <span>Radio and Television Broadcasting Technology/Technician (100202)</span>
+    <i class="fas fa-chevron-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <div class="sub-course-list">
+
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Audio/Visual Production I (Grade 9)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Introduction to the fundamentals of video production, including camera operation, basic lighting, audio recording, and non-linear editing with Adobe Premiere Pro.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/36914/units" class="button-link" target="_blank">View A/V Production I Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Audio/Visual Production II (Grade 10)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Focuses on narrative storytelling and broadcast journalism. Students will learn scriptwriting, storyboarding, and advanced editing techniques, producing short films and news segments.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/36915/units" class="button-link" target="_blank">View A/V Production II Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Audio/Visual Production III (Grade 11)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Advanced production techniques, including multi-camera live switching, motion graphics with Adobe After Effects, and green screen compositing. Students will manage and produce live broadcasts.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/36920/units" class="button-link" target="_blank">View A/V Production III Curriculum</a>
+        </div>
+      </div>
+      
+      <div class="course-item-dropdown">
+        <button class="sub-course-item" onclick="toggleDropdown(this)">
+          <span>Audio/Visual Production IV (Grade 12)</span><i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="sub-dropdown-content">
+          <p>Portfolio and reel development. Students will take on leadership roles in a capstone project, simulating a professional production environment from pre-production to final delivery.</p>
+          <a href="https://hcst-5154.chalk.com/public/map/36924/units" class="button-link" target="_blank">View A/V Production IV Curriculum</a>
+        </div>
+      </div>
+
     </div>
   </div>
-
+</div>
 
 
 </section>
   </main>
 
   <footer>
-    <p>© 2024 HCST District. All rights reserved.</p>
-  </footer>
+        <p>&copy; 2025 Hudson County Schools of Technology. All Rights Reserved.</p>
+      </footer>
+  </div>
 
   <script>
-    function toggleCourses(element) {
-      const courseList = element.nextElementSibling;
-      courseList.style.display = courseList.style.display === "flex" ? "none" : "flex";
+    function toggleDropdown(button) {
+      button.classList.toggle('active');
+      const content = button.nextElementSibling;
+      content.classList.toggle('active');
     }
   </script>
-  </div>
+
 </body>
 </html>

@@ -1,9 +1,15 @@
+Here is the "Science - Grade 8" page, updated to use your website's template and interactive dropdown style.
+
+Updated Page Code
+HTML
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Science Grade 8</title>
+  <meta name="viewport" content="width=device-width, initial-scale-1.0">
+  <title>Science - Grade 8</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -15,7 +21,7 @@
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="../giftedtalented.html">Gifted & Talanted</a></li>
+        <li><a href="../giftedtalented.html">Gifted & Talented</a></li>
         <li><a href="../dualenrollment.html">Dual Enrollment</a></li>
         <li><a href="../documents.html">Documents</a></li>
         <li><a href="../contact.html">Contact</a></li>
@@ -25,20 +31,40 @@
 
  <main>
     <section class="details">
-  <div class="grade-nav-buttons">
-  <a href="Science-grade-7.html" class="button-link back">← Back: Grade 7</a>
-  <a href="Science-grade-9.html" class="button-link next">Next: Grade 9 →</a>
-  </div>
+      <div class="grade-nav-buttons">
+      <a href="Science-grade-7.html" class="button-link">← Previous: Grade 7</a>
+      <a href="Science-grade-9.html" class="button-link">Next: Grade 9 →</a>
+      </div>
       <h2>Science - Grade 8</h2>
       <div class="course-list">
-        <a href="https://hcst-5154.chalk.com/public/map/39850/units" target="_blank" class="course-item">Science 8</a>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Science 8</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>This course focuses on Earth and space science, exploring topics such as plate tectonics, weather and climate, and the solar system. Students will also investigate core principles of physical science, including forces, motion, and the properties of waves.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/39850/units" target="_blank" class="button-link">View Science 8 Curriculum Map</a>
+            </div>
+        </div>
+
       </div>
     </section>
   </main>
-
+  
   <footer>
-    <p>© 2024 HCST District. All rights reserved.</p>
+    <p>&copy; 2025 Hudson County Schools of Technology. All Rights Reserved.</p>
   </footer>
 </div>
+
+<script>
+  function toggleDropdown(button) {
+    button.classList.toggle('active');
+    const content = button.nextElementSibling;
+    content.classList.toggle('active');
+  }
+</script>
+
 </body>
 </html>

@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Social Studies Grade 10</title>
+  <title>Social Studies - Grade 10</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="../giftedtalented.html">Gifted & Talanted</a></li>
+        <li><a href="../giftedtalented.html">Gifted & Talented</a></li>
         <li><a href="../dualenrollment.html">Dual Enrollment</a></li>
         <li><a href="../documents.html">Documents</a></li>
         <li><a href="../contact.html">Contact</a></li>
@@ -23,26 +24,53 @@
     </nav>
   </header>
 
-
  <main>
     <section class="details">
-  <div class="grade-nav-buttons">
-  <a href="socialStudies-grade-9.html" class="button-link back">← Back: Grade 9</a>
-  <a href="socialStudies-grade-11.html" class="button-link next">Next: Grade 11 →</a>
-  </div>
-      
+      <div class="grade-nav-buttons">
+      <a href="socialStudies-grade-9.html" class="button-link">← Previous: Grade 9</a>
+      <a href="socialStudies-grade-11.html" class="button-link">Next: Grade 11 →</a>
+      </div>
       <h2>Social Studies - Grade 10</h2>
       <div class="course-list">
-        <a href="https://hcst-5154.chalk.com/public/map/72986/units" target="_blank" class="course-item">AP US History I</a>
-        <a href="https://hcst-5154.chalk.com/public/map/38922/units" target="_blank" class="course-item">US History I</a>
-         
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>AP US History I</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>This college-level course provides a detailed examination of American history from pre-Columbian societies to the Civil War. Students will analyze historical materials, develop historical thinking skills, and prepare for the AP exam.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/72986/units" target="_blank" class="button-link">View APUSH I Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>US History I</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>This course covers American history from early exploration and colonization through the Civil War and Reconstruction. Students will study major political, social, and economic developments that shaped the nation.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38922/units" target="_blank" class="button-link">View US History I Curriculum Map</a>
+            </div>
+        </div>
+
       </div>
     </section>
   </main>
-
+  
   <footer>
-    <p>© 2024 HCST District. All rights reserved.</p>
+    <p>&copy; 2025 Hudson County Schools of Technology. All Rights Reserved.</p>
   </footer>
 </div>
+
+<script>
+  function toggleDropdown(button) {
+    button.classList.toggle('active');
+    const content = button.nextElementSibling;
+    content.classList.toggle('active');
+  }
+</script>
+
 </body>
 </html>

@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Science Grade 12</title>
+  <title>Science - Grade 12</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="../giftedtalented.html">Gifted & Talanted</a></li>
+        <li><a href="../giftedtalented.html">Gifted & Talented</a></li>
         <li><a href="../dualenrollment.html">Dual Enrollment</a></li>
         <li><a href="../documents.html">Documents</a></li>
         <li><a href="../contact.html">Contact</a></li>
@@ -23,39 +24,207 @@
     </nav>
   </header>
 
-
-
-  <main>
+ <main>
     <section class="details">
       <div class="grade-nav-buttons">
-      <a href="Science-grade-11.html" class="button-link back">← Back: Grade 11</a>
+      <a href="Science-grade-11.html" class="button-link">← Previous: Grade 11</a>
+      <span></span>
       </div>
       <h2>Science - Grade 12</h2>
       <div class="course-list">
-        <a href="https://hcst-5154.chalk.com/public/map/38853/units" target="_blank" class="course-item">AP Physics C: Mechanics</a>
-        <a href="https://hcst-5154.chalk.com/public/map/38853/units" target="_blank" class="course-item">AP Physics C: Electricity And Magnetism</a>
-        <a href="https://hcst-5154.chalk.com/public/map/38890/units" target="_blank" class="course-item">AP Physics II</a>
-        <a href="https://hcst-5154.chalk.com/public/map/38345/units" target="_blank" class="course-item">AP Biology</a>
-        <a href="https://hcst-5154.chalk.com/public/map/38825/units" target="_blank" class="course-item">AP Chemistry</a>
-        <a href="https://hcst-5154.chalk.com/public/map/38892/units" target="_blank" class="course-item">AP Research</a>
-        <a href="https://hcst-5154.chalk.com/public/map/56195/units" target="_blank" class="course-item">Introduction to Astronomy & Astrophysics (e-school)</a>
-        <a href="https://hcst-5154.chalk.com/public/map/59134/units" target="_blank" class="course-item">General Science</a>
-        <a href="https://hcst-5154.chalk.com/public/map/46155/units" target="_blank" class="course-item">Earth and Space Science</a>
-        <a href="https://hcst-5154.chalk.com/public/map/40137/units" target="_blank" class="course-item">Zoology</a>
-        <a href="https://hcst-5154.chalk.com/public/map/36836/units" target="_blank" class="course-item">Anatomy and Physiology</a>
-        <a href="https://hcst-5154.chalk.com/public/map/36922/units" target="_blank" class="course-item">Aquaculture</a>
-        <a href="https://hcst-5154.chalk.com/public/map/38584/units" target="_blank" class="course-item">Food Science/Bromatology</a>
-        <a href="https://hcst-5154.chalk.com/public/map/38801/units" target="_blank" class="course-item">Hydroponics</a>
-        <a href="https://hcst-5154.chalk.com/public/map/38708/units" target="_blank" class="course-item">Marine Science/Coastal Biology</a>
-        <a href="https://hcst-5154.chalk.com/public/map/38761/units" target="_blank" class="course-item">Pathology/Microbiology</a>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>AP Physics C: Mechanics</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>A calculus-based, college-level physics course that explores concepts such as kinematics, Newton’s laws of motion, work, energy, power, and rotational motion.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38853/units" target="_blank" class="button-link">View Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>AP Physics C: Electricity And Magnetism</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>A calculus-based, college-level course that explores concepts such as electrostatics, conductors, circuits, magnetic fields, and electromagnetism.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38853/units" target="_blank" class="button-link">View Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>AP Physics II</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>An algebra-based, college-level course exploring fluid dynamics, thermodynamics, electric force, field, and potential, circuits, and magnetism.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38890/units" target="_blank" class="button-link">View Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>AP Biology</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>A college-level course covering key biological concepts, including evolution, cellular processes, genetics, and ecology, with a significant lab component.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38345/units" target="_blank" class="button-link">View Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>AP Chemistry</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>A college-level course covering atomic theory, chemical bonding, reactions, kinetics, thermodynamics, and equilibrium, with a strong emphasis on laboratory work.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38825/units" target="_blank" class="button-link">View Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>AP Research</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>Following AP Seminar, this course allows students to deeply explore an academic topic, designing and conducting a year-long investigation to address a research question.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38892/units" target="_blank" class="button-link">View Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Introduction to Astronomy & Astrophysics (e-school)</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>This online course provides an overview of modern astronomy. Topics include the solar system, stars, galaxies, and cosmology.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/56195/units" target="_blank" class="button-link">View Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>General Science</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>A survey of major scientific disciplines, designed to enhance scientific literacy and understanding of the scientific method through accessible, real-world topics.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/59134/units" target="_blank" class="button-link">View Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Earth and Space Science</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>This course explores the Earth's systems and its place in the universe, including geology, oceanography, meteorology, and astronomy.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/46155/units" target="_blank" class="button-link">View Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Zoology</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>This course covers the classification, structure, function, and behavior of animals, from simple invertebrates to complex vertebrates.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/40137/units" target="_blank" class="button-link">View Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Anatomy and Physiology</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>A detailed study of the structure and function of the human body, exploring the major body systems and how they work together to maintain homeostasis.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/36836/units" target="_blank" class="button-link">View Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Aquaculture</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>The science of farming aquatic organisms, this course covers the principles of fish and shellfish cultivation, water quality management, and sustainable practices.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/36922/units" target="_blank" class="button-link">View Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Food Science/Bromatology</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>This course explores the science of food, including its chemical composition, principles of preservation, processing techniques, and nutrition.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38584/units" target="_blank" class="button-link">View Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Hydroponics</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>A course on the method of growing plants without soil, covering nutrient solution management, system design, and the science of plant growth.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38801/units" target="_blank" class="button-link">View Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Marine Science/Coastal Biology</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>This course focuses on the study of marine ecosystems, including the properties of seawater, marine biodiversity, and the ecological dynamics of coastal environments.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38708/units" target="_blank" class="button-link">View Curriculum Map</a>
+            </div>
+        </div>
+        
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Pathology/Microbiology</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>This course introduces the world of microorganisms and the study of disease, including the biology of bacteria, viruses, fungi, and the principles of immunology.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38761/units" target="_blank" class="button-link">View Curriculum Map</a>
+            </div>
+        </div>
+
       </div>
     </section>
   </main>
-
-
+  
   <footer>
-    <p>© 2024 HCST District. All rights reserved.</p>
+    <p>&copy; 2025 Hudson County Schools of Technology. All Rights Reserved.</p>
   </footer>
 </div>
+
+<script>
+  function toggleDropdown(button) {
+    button.classList.toggle('active');
+    const content = button.nextElementSibling;
+    content.classList.toggle('active');
+  }
+</script>
+
 </body>
 </html>

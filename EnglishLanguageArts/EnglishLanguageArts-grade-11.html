@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>English Language Arts Grade 9</title>
+  <title>English Language Arts - Grade 11</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="../giftedtalented.html">Gifted & Talanted</a></li>
+        <li><a href="../giftedtalented.html">Gifted & Talented</a></li>
         <li><a href="../dualenrollment.html">Dual Enrollment</a></li>
         <li><a href="../documents.html">Documents</a></li>
         <li><a href="../contact.html">Contact</a></li>
@@ -23,24 +24,54 @@
     </nav>
   </header>
 
-   <main>
-   <section class="details">
+  <main>
+    <section class="details">
 
-       <div class="grade-nav-buttons">
-  <a href="EnglishLanguageArts-grade-10.html" class="button-link back">← Back: Grade 10</a>
-  <a href="EnglishLanguageArts-grade-12.html" class="button-link next">Next: Grade 12 →</a>
+  <div class="grade-nav-buttons">
+    <a href="EnglishLanguageArts-grade-10.html" class="button-link">← Previous: Grade 10</a>
+    <a href="EnglishLanguageArts-grade-12.html" class="button-link">Next: Grade 12 →</a>
 </div>
       <h2>English Language Arts - Grade 11</h2>
       <div class="course-list">
-         <a href="https://hcst-5154.chalk.com/public/map/38833/units" target="_blank" class="course-item">AP English Language and Composition A</a>
-         <a href="https://hcst-5154.chalk.com/public/map/36843/units" target="_blank" class="course-item">English III / European Literature</a>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>AP English Language and Composition A</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>This college-level course engages students in becoming skilled readers of prose written in a variety of rhetorical contexts and in becoming skilled writers who compose for a variety of purposes. Students will focus on analyzing rhetoric and developing their own argumentative and analytical essays.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38833/units" target="_blank" class="button-link">View AP English Curriculum Map</a>
+            </div>
+        </div>
+        
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>English III / European Literature</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>This course offers a survey of major works of European literature. Students will explore how these texts reflect their historical and cultural contexts while analyzing literary movements, universal themes, and character development, further refining their essay-writing skills.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/36843/units" target="_blank" class="button-link">View English III Curriculum Map</a>
+            </div>
+        </div>
+
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2024 HCST District. All rights reserved.</p>
+    <p>&copy; 2025 Hudson County Schools of Technology. All Rights Reserved.</p>
   </footer>
   </div>
+
+<script>
+  function toggleDropdown(button) {
+    button.classList.toggle('active');
+    const content = button.nextElementSibling;
+    content.classList.toggle('active');
+  }
+</script>
+
 </body>
 </html>

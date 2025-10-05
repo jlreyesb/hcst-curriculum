@@ -1,9 +1,15 @@
+Of course. Here is the "Science - Grade 11" page, updated to use your website's template and interactive dropdowns for all six courses.
+
+Updated Page Code
+HTML
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Science Grade 11</title>
+  <title>Science - Grade 11</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -15,7 +21,7 @@
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="../giftedtalented.html">Gifted & Talanted</a></li>
+        <li><a href="../giftedtalented.html">Gifted & Talented</a></li>
         <li><a href="../dualenrollment.html">Dual Enrollment</a></li>
         <li><a href="../documents.html">Documents</a></li>
         <li><a href="../contact.html">Contact</a></li>
@@ -23,29 +29,97 @@
     </nav>
   </header>
 
-
-  <main>
+ <main>
     <section class="details">
       <div class="grade-nav-buttons">
-      <a href="Science-grade-10.html" class="button-link back">← Back: Grade 10</a>
-      <a href="Science-grade-12.html" class="button-link next">Next: Grade 12 →</a>
+      <a href="Science-grade-10.html" class="button-link">← Previous: Grade 10</a>
+      <a href="Science-grade-12.html" class="button-link">Next: Grade 12 →</a>
       </div>
-      
       <h2>Science - Grade 11</h2>
       <div class="course-list">
-        <a href="https://hcst-5154.chalk.com/public/map/38854/units" target="_blank" class="course-item">AP Physics I</a>
-        <a href="https://hcst-5154.chalk.com/public/map/38893/units" target="_blank" class="course-item">AP Seminar</a>
-        <a href="https://hcst-5154.chalk.com/public/map/38892/units" target="_blank" class="course-item">AP Research</a>
-        <a href="https://hcst-5154.chalk.com/public/map/38766/units" target="_blank" class="course-item">Physics</a>
-        <a href="https://hcst-5154.chalk.com/public/map/59134/units" target="_blank" class="course-item">General Science</a>
-        <a href="https://hcst-5154.chalk.com/public/map/46155/units" target="_blank" class="course-item">Earth and Space Science</a>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>AP Physics I</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>AP Physics 1 is an algebra-based, introductory college-level physics course. Students explore topics such as kinematics, dynamics, energy, momentum, and simple harmonic motion through inquiry-based investigations.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38854/units" target="_blank" class="button-link">View AP Physics I Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>AP Seminar</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>AP Seminar is a foundational course where students learn to investigate real-world issues from multiple perspectives, gathering and analyzing information to develop credible and complex arguments.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38893/units" target="_blank" class="button-link">View AP Seminar Curriculum Map</a>
+            </div>
+        </div>
+        
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>AP Research</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>Following AP Seminar, AP Research allows students to deeply explore an academic topic of interest. They design, plan, and conduct a year-long investigation to address a research question.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38892/units" target="_blank" class="button-link">View AP Research Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Physics</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>This course provides an introduction to the fundamental concepts of physics, including motion, forces, energy, and electricity. Students will develop a conceptual understanding of the physical world through lab work and problem-solving.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38766/units" target="_blank" class="button-link">View Physics Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>General Science</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>This course offers a broad survey of major scientific disciplines, including life, physical, and earth sciences. It is designed to enhance scientific literacy and understanding of the scientific method through accessible, real-world topics.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/59134/units" target="_blank" class="button-link">View General Science Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Earth and Space Science</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>This course explores the Earth's systems and its place in the universe. Topics include geology, oceanography, meteorology, and astronomy, with a focus on understanding the processes that shape our planet and cosmos.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/46155/units" target="_blank" class="button-link">View Earth/Space Science Curriculum Map</a>
+            </div>
+        </div>
+
       </div>
     </section>
   </main>
-
+  
   <footer>
-    <p>© 2024 HCST District. All rights reserved.</p>
+    <p>&copy; 2025 Hudson County Schools of Technology. All Rights Reserved.</p>
   </footer>
 </div>
+
+<script>
+  function toggleDropdown(button) {
+    button.classList.toggle('active');
+    const content = button.nextElementSibling;
+    content.classList.toggle('active');
+  }
+</script>
+
 </body>
 </html>

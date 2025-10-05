@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Social Studies Grade 12</title>
+  <title>Social Studies - Grade 12</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="../giftedtalented.html">Gifted & Talanted</a></li>
+        <li><a href="../giftedtalented.html">Gifted & Talented</a></li>
         <li><a href="../dualenrollment.html">Dual Enrollment</a></li>
         <li><a href="../documents.html">Documents</a></li>
         <li><a href="../contact.html">Contact</a></li>
@@ -23,31 +24,97 @@
     </nav>
   </header>
 
-
-
-
-<main>
+ <main>
     <section class="details">
-  <div class="grade-nav-buttons">
-  <a href="socialStudies-grade-11.html" class="button-link back">← Back: Grade 11</a>
-  </div>
+      <div class="grade-nav-buttons">
+      <a href="socialStudies-grade-11.html" class="button-link">← Previous: Grade 11</a>
+      <span></span>
+      </div>
       <h2>Social Studies - Grade 12</h2>
       <div class="course-list">
-        <a href="https://hcst-5154.chalk.com/public/map/38900/units" target="_blank" class="course-item">AP US Government and Politics</a>
-        <a href="https://hcst-5154.chalk.com/public/map/62305/units" target="_blank" class="course-item">AP World History: Modern</a>
-        <a href="https://hcst-5154.chalk.com/public/map/38848/units" target="_blank" class="course-item">AP Human Geography</a>
-        <a href="https://hcst-5154.chalk.com/public/map/54118/units" target="_blank" class="course-item">AP Psychology</a>
-        <a href="https://hcst-5154.chalk.com/public/map/38439/units" target="_blank" class="course-item">History Through Film</a>
-        <a href="https://hcst-5154.chalk.com/public/map/68184/units" target="_blank" class="course-item">Rock and Roll History</a>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>AP US Government and Politics</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>A college-level course providing an analytical perspective on government and politics in the United States, including the study of the Constitution, political beliefs, and policy processes.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38900/units" target="_blank" class="button-link">View AP Gov Curriculum Map</a>
+            </div>
+        </div>
+        
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>AP World History: Modern</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>This college-level course covers the history of the world from 1200 C.E. to the present, focusing on significant events, individuals, and processes.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/62305/units" target="_blank" class="button-link">View AP World History Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>AP Human Geography</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>A college-level course on the systematic study of patterns and processes that have shaped human understanding, use, and alteration of Earth's surface.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38848/units" target="_blank" class="button-link">View AP Human Geo Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>AP Psychology</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>A college-level course introducing the systematic and scientific study of the behavior and mental processes of human beings and other animals.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/54118/units" target="_blank" class="button-link">View AP Psychology Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>History Through Film</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>An elective course analyzing historical events through film. Students critically evaluate cinematic portrayals of history, comparing them with historical documents.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38439/units" target="_blank" class="button-link">View Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Rock and Roll History</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>This course traces the history and cultural impact of rock and roll, exploring how the music reflected and influenced social, political, and economic changes.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/68184/units" target="_blank" class="button-link">View Curriculum Map</a>
+            </div>
+        </div>
 
       </div>
     </section>
   </main>
-
-
+  
   <footer>
-    <p>© 2024 HCST District. All rights reserved.</p>
+    <p>&copy; 2025 Hudson County Schools of Technology. All Rights Reserved.</p>
   </footer>
 </div>
+
+<script>
+  function toggleDropdown(button) {
+    button.classList.toggle('active');
+    const content = button.nextElementSibling;
+    content.classList.toggle('active');
+  }
+</script>
+
 </body>
 </html>

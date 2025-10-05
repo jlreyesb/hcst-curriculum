@@ -1,13 +1,19 @@
+Of course. Here is the "Health and Physical Education - Grade 9" page, updated to use your website's template and interactive dropdowns for both courses.
+
+Updated Page Code
+HTML
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Health & PE Grade 9</title>
+  <title>Health & PE - Grade 9</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-   <div class="page-container">
+  <div class="page-container">
   <header>
     <div class="logo">
       <h1>HCST Curriculum</h1>
@@ -15,7 +21,7 @@
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="../giftedtalented.html">Gifted & Talanted</a></li>
+        <li><a href="../giftedtalented.html">Gifted & Talented</a></li>
         <li><a href="../dualenrollment.html">Dual Enrollment</a></li>
         <li><a href="../documents.html">Documents</a></li>
         <li><a href="../contact.html">Contact</a></li>
@@ -26,24 +32,50 @@
  <main>
     <section class="details">
       <div class="grade-nav-buttons">
-      <a href="Health&PhysEd-grade-8.html" class="button-link back">← Back: Grade 8</a>
-      <a href="Health&PhysEd-grade-10.html" class="button-link next">Next: Grade 10 →</a>
+        <a href="Health&PhysEd-grade-8.html" class="button-link">← Previous: Grade 8</a>
+        <a href="Health&PhysEd-grade-10.html" class="button-link">Next: Grade 10 →</a>
       </div>
       <h2>Health and Physical Education - Grade 9</h2>
       <div class="course-list">
-        <a href="https://hcst-5154.chalk.com/public/map/38435/units" target="_blank" class="course-item">Health I</a>
-        <a href="https://hcst-5154.chalk.com/public/map/38762/units" target="_blank" class="course-item">Physical Education I</a>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Health I</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>This foundational high school health course covers a wide range of topics essential for adolescent well-being. Areas of study include mental and emotional health, nutrition, substance abuse, and disease prevention, with a focus on developing healthy habits.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38435/units" target="_blank" class="button-link">View Health I Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Physical Education I</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>Physical Education I introduces high school students to a variety of team and individual sports and fitness activities. The course emphasizes the development of physical skills, teamwork, and an understanding of the principles of personal fitness.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38762/units" target="_blank" class="button-link">View PE I Curriculum Map</a>
+            </div>
+        </div>
+
       </div>
     </section>
   </main>
-
-
-
-
-
+  
   <footer>
-    <p>© 2024 HCST District. All rights reserved.</p>
+    <p>&copy; 2025 Hudson County Schools of Technology. All Rights Reserved.</p>
   </footer>
-  </div>
+</div>
+
+<script>
+  function toggleDropdown(button) {
+    button.classList.toggle('active');
+    const content = button.nextElementSibling;
+    content.classList.toggle('active');
+  }
+</script>
+
 </body>
 </html>

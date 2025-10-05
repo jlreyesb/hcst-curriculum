@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Computer Science Grade 11</title>
+  <title>Computer Science - Grade 11</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="../giftedtalented.html">Gifted & Talanted</a></li>
+        <li><a href="../giftedtalented.html">Gifted & Talented</a></li>
         <li><a href="../dualenrollment.html">Dual Enrollment</a></li>
         <li><a href="../documents.html">Documents</a></li>
         <li><a href="../contact.html">Contact</a></li>
@@ -27,21 +28,50 @@
    <section class="details">
 
   <div class="grade-nav-buttons">
-  <a href="ComputerScience-grade-10.html" class="button-link back">← Back: Grade 10</a>
-  <a href="ComputerScience-grade-12.html" class="button-link next">Next: Grade 12 →</a>
+    <a href="ComputerScience-grade-10.html" class="button-link">← Previous: Grade 10</a>
+    <a href="ComputerScience-grade-12.html" class="button-link">Next: Grade 12 →</a>
 </div>
-      <h2>Computer Science - Grade 11</h2>
-      <div class="course-list">
-        <a href="https://hcst-5154.chalk.com/public/map/40105/units" target="_blank" class="course-item">AP Computer Science Principals</a>
-        <a href="https://hcst-5154.chalk.com/public/map/38826/units" target="_blank" class="course-item">AP Computer Science A</a>
-      </div>
-    </section>
-  </main>
+     <h2>Computer Science - Grade 11</h2>
+     <div class="course-list">
+        
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>AP Computer Science Principles</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>AP Computer Science Principles introduces students to the foundational concepts of computer science and challenges them to explore how computing and technology can impact the world. The course covers creative problem solving, data, and the societal impacts of computing.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/40105/units" target="_blank" class="button-link">View AP CSP Curriculum Map</a>
+            </div>
+        </div>
 
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>AP Computer Science A</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>AP Computer Science A is an introductory college-level course in computer science. Students cultivate their understanding of programming with a focus on problem solving and algorithm development using the Java programming language.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38826/units" target="_blank" class="button-link">View AP CSA Curriculum Map</a>
+            </div>
+        </div>
+
+     </div>
+   </section>
+ </main>
 
   <footer>
-    <p>© 2024 HCST District. All rights reserved.</p>
+    <p>&copy; 2025 Hudson County Schools of Technology. All Rights Reserved.</p>
   </footer>
 </div>
+
+<script>
+  function toggleDropdown(button) {
+    button.classList.toggle('active');
+    const content = button.nextElementSibling;
+    content.classList.toggle('active');
+  }
+</script>
+
 </body>
 </html>

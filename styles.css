@@ -388,7 +388,7 @@ main {
 }
 
 .dropdown-content.active {
-    max-height: 150px; /* Adjusted to make the dropdown content smaller when open */
+    max-height: 850px; /* Adjusted to make the dropdown content smaller when open */
     padding-top: 1rem;
     padding-bottom: 1rem;
     transition: max-height 0.5s ease-in, padding 0.5s ease-in;
@@ -609,4 +609,68 @@ footer {
     flex-direction: column;
     gap: 1rem;
   }
+}
+
+/* --- Nested Dropdown Styles --- */
+
+/* Wrapper for the list of sub-courses inside a program dropdown */
+.sub-course-list {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* The gray button for an individual course (Level 2) */
+.sub-course-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #e5e7eb;
+  color: #1f2937;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  text-align: left;
+  transition: background-color 0.2s ease;
+  border: 1px solid #d1d5db;
+  cursor: pointer;
+}
+
+.sub-course-item:hover {
+  background-color: #d1d5db;
+}
+
+/* Icon rotation for the sub-course button */
+.sub-course-item .fas {
+    font-size: 0.9rem;
+    transition: transform 0.3s ease-out;
+}
+.sub-course-item.active .fas {
+    transform: rotate(180deg);
+}
+
+/* The container for the final description text (Level 3) */
+.sub-dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    background: #ffffff;
+    padding: 0 1.5rem;
+    font-size: 1rem;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-radius: 0 0 6px 6px;
+}
+
+.sub-dropdown-content.active {
+    max-height: 800px; /* Adjust if your descriptions are very long */
+    padding: 1.5rem;
+}
+
+.sub-dropdown-content p {
+    margin-bottom: 1rem;
 }

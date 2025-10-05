@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Science Grade 7</title>
+  <title>Science - Grade 7</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="../giftedtalented.html">Gifted & Talanted</a></li>
+        <li><a href="../giftedtalented.html">Gifted & Talented</a></li>
         <li><a href="../dualenrollment.html">Dual Enrollment</a></li>
         <li><a href="../documents.html">Documents</a></li>
         <li><a href="../contact.html">Contact</a></li>
@@ -23,22 +24,42 @@
     </nav>
   </header>
 
-  <main>
+ <main>
     <section class="details">
-  <div class="grade-nav-buttons">
-  <a href="Science-grade-6.html" class="button-link back">← Back: Grade 6</a>
-  <a href="Science-grade-8.html" class="button-link next">Next: Grade 8 →</a>
-  </div>
+      <div class="grade-nav-buttons">
+      <a href="Science-grade-6.html" class="button-link">← Previous: Grade 6</a>
+      <a href="Science-grade-8.html" class="button-link">Next: Grade 8 →</a>
+      </div>
       <h2>Science - Grade 7</h2>
       <div class="course-list">
-        <a href="https://hcst-5154.chalk.com/public/map/39849/units" target="_blank" class="course-item">Science 7</a>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Science 7</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>This course deepens the exploration of life science, with a focus on ecosystems, genetics, and the human body. Students will also investigate concepts in chemistry and physics, using the scientific method to conduct experiments and analyze data.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/39849/units" target="_blank" class="button-link">View Science 7 Curriculum Map</a>
+            </div>
+        </div>
+
       </div>
     </section>
   </main>
-
+  
   <footer>
-    <p>© 2024 HCST District. All rights reserved.</p>
+    <p>&copy; 2025 Hudson County Schools of Technology. All Rights Reserved.</p>
   </footer>
 </div>
+
+<script>
+  function toggleDropdown(button) {
+    button.classList.toggle('active');
+    const content = button.nextElementSibling;
+    content.classList.toggle('active');
+  }
+</script>
+
 </body>
 </html>

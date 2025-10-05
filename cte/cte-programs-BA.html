@@ -4,199 +4,155 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CTE Programs</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="../styles.css">
-  <style>
-    .program-toggle {
-      cursor: pointer;
-      margin-top: 25px;
-    }
-
-   .course-list {
-  display: none;
-  flex-wrap: wrap;
-  gap: 16px; /* adds spacing between boxes */
-  margin: 15px 0 30px 0;
-}
-
-.details h3 {
-  font-size: 1.3rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  color: #333333;
-}
-
-
-.cte-button {
-  background-color: #e5e7eb;
-  color: #1f2937;
-  padding: 12px 20px;
-  border-radius: 10px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: background-color 0.2s ease;
-  border: 1px solid #d1d5db;
-  display: inline-block;
-  min-width: 160px; /* ensures consistent button size */
-  text-align: center;
-}
-
-    .cte-button:hover {
-      background-color: #d4af37;
-      color: #000;
-    }
-  </style>
 </head>
 <body>
   <div class="page-container">
-  <header>
-    <div class="logo">
-      <h1>HCST Curriculum</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../giftedtalented.html">Gifted & Talanted</a></li>
-        <li><a href="../dualenrollment.html">Dual Enrollment</a></li>
-        <li><a href="../documents.html">Documents</a></li>
-        <li><a href="../contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+      <div class="logo">
+        <h1>HCST Curriculum</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../giftedtalented.html">Gifted & Talented</a></li>
+          <li><a href="../dualenrollment.html">Dual Enrollment</a></li>
+          <li><a href="../documents.html">Documents</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
+    <main>
+      <section class="details">
+      <div class="grade-nav-buttons">
+        <a href="cte-programs-HT.html" class="button-link">← Previous: High Tech/ACTE</a>
+        <a href="cte-programs-CP.html" class="button-link">Next: County Prep/ATD →</a>
+      </div>
+        <h2>Bayonne Academy - Career Technical Education (CTE) Programs of Study </h2>
+        <h3 style="text-align: center; margin-top: 2.5rem; margin-bottom: 1rem; color: #333;"> All Programs of Study</h3>
 
+        <div class="course-list">
+          <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)"><span>Carpentry/Carpenter (460201)</span><i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+              <div class="sub-course-list">
+                <div class="course-item-dropdown"><button class="sub-course-item" onclick="toggleDropdown(this)"><span>Carpentry I (Grade 9)</span><i class="fas fa-chevron-down"></i></button><div class="sub-dropdown-content"><p>Introduction to shop safety, tool usage, and basic woodworking principles.</p><a href="https://hcst-5154.chalk.com/public/map/68718/units" class="button-link" target="_blank">View Carpentry I Curriculum</a></div></div>
+                <div class="course-item-dropdown"><button class="sub-course-item" onclick="toggleDropdown(this)"><span>Carpentry II (Grade 10)</span><i class="fas fa-chevron-down"></i></button><div class="sub-dropdown-content"><p>Focuses on residential framing, including floors, walls, and roof systems.</p><a href="https://hcst-5154.chalk.com/public/map/68985/units" class="button-link" target="_blank">View Carpentry II Curriculum</a></div></div>
+                <div class="course-item-dropdown"><button class="sub-course-item" onclick="toggleDropdown(this)"><span>Carpentry III (Grade 11)</span><i class="fas fa-chevron-down"></i></button><div class="sub-dropdown-content"><p>Covers exterior and interior finishing, including siding, roofing, and trim work.</p><a href="https://hcst-5154.chalk.com/public/map/68986/units" class="button-link" target="_blank">View Carpentry III Curriculum</a></div></div>
+                <div class="course-item-dropdown"><button class="sub-course-item" onclick="toggleDropdown(this)"><span>Carpentry IV (Grade 12)</span><i class="fas fa-chevron-down"></i></button><div class="sub-dropdown-content"><p>Advanced carpentry, project management, and preparation for industry certifications.</p><a href="https://hcst-5154.chalk.com/public/map/68987/units" class="button-link" target="_blank">View Carpentry IV Curriculum</a></div></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)"><span>Plumbing Technology/Plumber (460503)</span><i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+                <div class="sub-course-list">
+                    <div class="course-item-dropdown"><button class="sub-course-item" onclick="toggleDropdown(this)"><span>Plumbing I (Grade 9)</span><i class="fas fa-chevron-down"></i></button><div class="sub-dropdown-content"><p>Introduction to plumbing systems, pipe fitting, and safety protocols.</p><a href="https://hcst-5154.chalk.com/public/map/66829/units" class="button-link" target="_blank">View Plumbing I Curriculum</a></div></div>
+                    <div class="course-item-dropdown"><button class="sub-course-item" onclick="toggleDropdown(this)"><span>Plumbing II (Grade 10)</span><i class="fas fa-chevron-down"></i></button><div class="sub-dropdown-content"><p>Focuses on residential and commercial plumbing installations and repair.</p><a href="https://hcst-5154.chalk.com/public/map/68477/units" class="button-link" target="_blank">View Plumbing II Curriculum</a></div></div>
+                    <div class="course-item-dropdown"><button class="sub-course-item" onclick="toggleDropdown(this)"><span>Plumbing III (Grade 11)</span><i class="fas fa-chevron-down"></i></button><div class="sub-dropdown-content"><p>Advanced topics including system design, code compliance, and fixture installation.</p><a href="https://hcst-5154.chalk.com/public/map/68479/units" class="button-link" target="_blank">View Plumbing III Curriculum</a></div></div>
+                    <div class="course-item-dropdown"><button class="sub-course-item" onclick="toggleDropdown(this)"><span>Plumbing IV (Grade 12)</span><i class="fas fa-chevron-down"></i></button><div class="sub-dropdown-content"><p>Specialized systems, troubleshooting, and preparation for professional licensing.</p><a href="https://hcst-5154.chalk.com/public/map/68480/units" class="button-link" target="_blank">View Plumbing IV Curriculum</a></div></div>
+                </div>
+            </div>
+          </div>
 
- <section class="details">
-  <h2>Career Technical Education (CTE) Programs</h2>
+          <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)"><span>Building Construction Technology (460415)</span><i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+              <div class="sub-course-list">
+                <p style="padding: 0 1.5rem;">(Courses for this program will be added soon)</p>
+              </div>
+            </div>
+          </div>
 
-<h3 style="text-align: center; margin-top: 2.5rem; margin-bottom: 1rem; color: #333;">Bayonne Academy Programs of Study</h3>
+          <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)"><span>Digital Communications & Media/Multimedia (090702)</span><i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+                <div class="sub-course-list">
+                    <div class="course-item-dropdown"><button class="sub-course-item" onclick="toggleDropdown(this)"><span>Interactive Media I (Grade 9)</span><i class="fas fa-chevron-down"></i></button><div class="sub-dropdown-content"><p>Introduction to digital graphics, video editing, and web design principles.</p><a href="https://hcst-5154.chalk.com/public/map/39146/units" class="button-link" target="_blank">View Interactive Media I Curriculum</a></div></div>
+                    <div class="course-item-dropdown"><button class="sub-course-item" onclick="toggleDropdown(this)"><span>Interactive Media II (Grade 10)</span><i class="fas fa-chevron-down"></i></button><div class="sub-dropdown-content"><p>Advanced concepts in animation, user interface design, and multimedia storytelling.</p><a href="https://hcst-5154.chalk.com/public/map/39148/units" class="button-link" target="_blank">View Interactive Media II Curriculum</a></div></div>
+                    <div class="course-item-dropdown"><button class="sub-course-item" onclick="toggleDropdown(this)"><span>Interactive Media III (Grade 11)</span><i class="fas fa-chevron-down"></i></button><div class="sub-dropdown-content"><p>Project-based learning focusing on portfolio development and client work.</p><a href="https://hcst-5154.chalk.com/public/map/36920/units" class="button-link" target="_blank">View Interactive Media III Curriculum</a></div></div>
+                    <div class="course-item-dropdown"><button class="sub-course-item" onclick="toggleDropdown(this)"><span>Interactive Media IV (Grade 12)</span><i class="fas fa-chevron-down"></i></button><div class="sub-dropdown-content"><p>Capstone projects, advanced industry software, and career preparation.</p><a href="https://hcst-5154.chalk.com/public/map/36924/units" class="button-link" target="_blank">View Interactive Media IV Curriculum</a></div></div>
+                </div>
+            </div>
+          </div>
 
+          <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)"><span>Electrician (460302)</span><i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+              <div class="sub-course-list">
+                <p style="padding: 0 1.5rem;">(Courses for this program will be added soon)</p>
+              </div>
+            </div>
+          </div>
 
-<!-- Carpentry/Carpenter -->
-  <div>
-    <div class="course-item program-toggle" onclick="toggleCourses(this)">Carpentry/Carpenter (460201)</div>
-    <div class="course-list">
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68718/units">Carpentry I</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68985/units">Carpentry II</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68986/units">Carpentry III</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68987/units">Carpentry IV</a>
-    </div>
+          <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)"><span>Certified Clinical Medical Assistant</span><i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+              <div class="sub-course-list">
+                <p style="padding: 0 1.5rem;">(Courses for this program will be added soon)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)"><span>Logistics & Supply Chain Management (520203)</span><i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+              <div class="sub-course-list">
+                <p style="padding: 0 1.5rem;">(Courses for this program will be added soon)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)"><span>Law and Government</span><i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+              <div class="sub-course-list">
+                <p style="padding: 0 1.5rem;">(Courses for this program will be added soon)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)"><span>Welding Technology/Welder (480508)</span><i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+              <div class="sub-course-list">
+                  <div class="course-item-dropdown"><button class="sub-course-item" onclick="toggleDropdown(this)"><span>Engineering Design (Grade 9)</span><i class="fas fa-chevron-down"></i></button><div class="sub-dropdown-content"><p>Foundational principles of technical drawing, design, and material properties.</p><a href="https://hcst-5154.chalk.com/public/map/38353/units" class="button-link" target="_blank">View Engineering Design Curriculum</a></div></div>
+                  <div class="course-item-dropdown"><button class="sub-course-item" onclick="toggleDropdown(this)"><span>Welding Technology I (Grade 10)</span><i class="fas fa-chevron-down"></i></button><div class="sub-dropdown-content"><p>Introduction to welding safety and basic techniques in shielded metal arc welding (SMAW).</p><a href="https://hcst-5154.chalk.com/public/map/43369/units" class="button-link" target="_blank">View Welding I Curriculum</a></div></div>
+                  <div class="course-item-dropdown"><button class="sub-course-item" onclick="toggleDropdown(this)"><span>Welding Technology II (Grade 11)</span><i class="fas fa-chevron-down"></i></button><div class="sub-dropdown-content"><p>Advanced techniques including gas metal arc (MIG) and gas tungsten arc (TIG) welding.</p><a href="https://hcst-5154.chalk.com/public/map/47442/units" class="button-link" target="_blank">View Welding II Curriculum</a></div></div>
+                  <div class="course-item-dropdown"><button class="sub-course-item" onclick="toggleDropdown(this)"><span>Welding Technology III (Grade 12)</span><i class="fas fa-chevron-down"></i></button><div class="sub-dropdown-content"><p>Specialized welding processes, pipe welding, and preparation for AWS certification.</p><a href="https://hcst-5154.chalk.com/public/map/47449/units" class="button-link" target="_blank">View Welding III Curriculum</a></div></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)"><span>Cosmetology/Cosmetologist, General (120401)</span><i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+              <div class="sub-course-list">
+                  <div class="course-item-dropdown"><button class="sub-course-item" onclick="toggleDropdown(this)"><span>Cosmetology Licensing I (Grade 9)</span><i class="fas fa-chevron-down"></i></button><div class="sub-dropdown-content"><p>Introduction to hairstyling, safety, sanitation, and state board regulations.</p><a href="https://hcst-5154.chalk.com/public/map/38236/units" class="button-link" target="_blank">View Cosmetology I Curriculum</a></div></div>
+                  <div class="course-item-dropdown"><button class="sub-course-item" onclick="toggleDropdown(this)"><span>Cosmetology Licensing II (Grade 10)</span><i class="fas fa-chevron-down"></i></button><div class="sub-dropdown-content"><p>Advanced hair cutting and coloring techniques, and introduction to skincare.</p><a href="https://hcst-5154.chalk.com/public/map/38274/units" class="button-link" target="_blank">View Cosmetology II Curriculum</a></div></div>
+                   <div class="course-item-dropdown"><button class="sub-course-item" onclick="toggleDropdown(this)"><span>Cosmetology Licensing III (Grade 11)</span><i class="fas fa-chevron-down"></i></button><div class="sub-dropdown-content"><p>Focus on chemical services, nail technology, and advanced skincare practices.</p><a href="https://hcst-5154.chalk.com/public/map/38277/units" class="button-link" target="_blank">View Cosmetology III Curriculum</a></div></div>
+                   <div class="course-item-dropdown"><button class="sub-course-item" onclick="toggleDropdown(this)"><span>Cosmetology Licensing IV (Grade 12)</span><i class="fas fa-chevron-down"></i></button><div class="sub-dropdown-content"><p>Salon management, business practices, and final preparation for state licensure examination.</p><a href="https://hcst-5154.chalk.com/public/map/38278/units" class="button-link" target="_blank">View Cosmetology IV Curriculum</a></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Hudson County Schools of Technology. All Rights Reserved.</p>
+    </footer>
   </div>
-
-<!-- Plumbing -->
-  <div>
-    <div class="course-item program-toggle" onclick="toggleCourses(this)">Plumbing Technology/Plumber (460503)</div>
-    <div class="course-list">
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/66829/units">Plumbing I</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68477/units">Plumbing II</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68479/units">Plumbing III</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68480/units">Plumbing IV</a>
-    </div>
-  </div>
-
-<!-- Construction Trades -->
-  <div>
-    <div class="course-item program-toggle" onclick="toggleCourses(this)">Building Construction Technology (460415)</div>
-    <div class="course-list">
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68718/units">Building Construction Technology I</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68985/units">Building Construction Technology II</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68986/units">Building Construction Technology III</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68987/units">Building Construction Technology IV</a>
-    </div>
-  </div>
-
-<!-- Commuication and Digital Media -->
-  <div>
-    <div class="course-item program-toggle" onclick="toggleCourses(this)">Digital Communications & Media/Multimedia (90702)</div>
-    <div class="course-list">
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/39146/units">Interactive Media I</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/39148/units">Interactive Media II</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/36920/units">Interactive Media III</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/36924/units">Interactive Media IV</a>
-    </div>
-  </div>
-
-<!-- Electrician -->
-  <div>
-    <div class="course-item program-toggle" onclick="toggleCourses(this)">Electrician (460302)</div>
-    <div class="course-list">
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/39146/units">Electrician I</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/39148/units">Electrician II</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/36920/units">Electrician III</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/36924/units">Electrician IV</a>
-    </div>
-  </div>
-
-<!-- Certified Clinical Medical Assistant -->
-  <div>
-    <div class="course-item program-toggle" onclick="toggleCourses(this)">Certified Clinical Medical Assistant (?)</div>
-    <div class="course-list">
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68718/units">Carpentry I</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68985/units">Carpentry II</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68986/units">Carpentry III</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68987/units">Carpentry IV</a>
-    </div>
-  </div>
-
-<!-- Supply Chain and Logistics -->
-  <div>
-    <div class="course-item program-toggle" onclick="toggleCourses(this)">Logistics, Materials, and Supply Chain Management (520203)</div>
-    <div class="course-list">
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68718/units">Logistics I</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68985/units">Logistics II</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68986/units">Logistics III</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68987/units">Logistics IV</a>
-    </div>
-  </div>
-
-<!-- Law and Government -->
-  <div>
-    <div class="course-item program-toggle" onclick="toggleCourses(this)">Law and Government (?)</div>
-    <div class="course-list">
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68718/units">Law and Government I</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68985/units">Law and Government II</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68986/units">Law and Government III</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/68987/units">Law and Government IV</a>
-    </div>
-  </div>
-
-<!-- Welding -->
-  <div>
-    <div class="course-item program-toggle" onclick="toggleCourses(this)">Welding Technology/Welder (480508)</div>
-    <div class="course-list">
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38353/units">Engineering Design</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/43369/units">Welding Technology I</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/47442/units">Welding Technology II</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/47449/units">Welding Technology III</a>
-    </div>
-  </div>
-  
-<!-- Cosmotology -->
-  <div>
-    <div class="course-item program-toggle" onclick="toggleCourses(this)">Cosmetology/Cosmetologist, General (120401)</div>
-    <div class="course-list">
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38236/units">Cosmetology Licensing I</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38274/units">Cosmetology Licensing II</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38277/units">Cosmetology Licensing III</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/45534/units">Cosmetology/Unified Science III</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/38278/units">Cosmetology Licensing IV</a>
-      <a class="cte-button" href="https://hcst-5154.chalk.com/public/map/45535/units">Cosmetology/Unified Science IV</a>          
-    </div>
-  </div> 
-
-</section>
-  </main>
-
-  <footer>
-    <p>© 2024 HCST District. All rights reserved.</p>
-  </footer>
 
   <script>
-    function toggleCourses(element) {
-      const courseList = element.nextElementSibling;
-      courseList.style.display = courseList.style.display === "flex" ? "none" : "flex";
+    function toggleDropdown(button) {
+      button.classList.toggle('active');
+      const content = button.nextElementSibling;
+      content.classList.toggle('active');
     }
   </script>
-  </div>
 </body>
 </html>

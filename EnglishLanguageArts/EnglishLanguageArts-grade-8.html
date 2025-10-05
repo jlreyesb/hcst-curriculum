@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>English Language Arts Grade 8</title>
+  <title>English Language Arts - Grade 8</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-      <div class="page-container">
+  <div class="page-container">
   <header>
     <div class="logo">
       <h1>HCST Curriculum</h1>
@@ -15,7 +16,7 @@
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="../giftedtalented.html">Gifted & Talanted</a></li>
+        <li><a href="../giftedtalented.html">Gifted & Talented</a></li>
         <li><a href="../dualenrollment.html">Dual Enrollment</a></li>
         <li><a href="../documents.html">Documents</a></li>
         <li><a href="../contact.html">Contact</a></li>
@@ -26,21 +27,38 @@
   <main>
     <section class="details">
 
-       <div class="grade-nav-buttons">
-  <a href="EnglishLanguageArts-grade-7.html" class="button-link back">← Back: Grade 7</a>
-  <a href="EnglishLanguageArts-grade-9.html" class="button-link next">Next: Grade 9 →</a>
+  <div class="grade-nav-buttons">
+    <a href="EnglishLanguageArts-grade-7.html" class="button-link">← Previous: Grade 7</a>
+    <a href="EnglishLanguageArts-grade-9.html" class="button-link">Next: Grade 9 →</a>
 </div>
       <h2>English Language Arts - Grade 8</h2>
       <div class="course-list">
-        <a href="https://hcst-5154.chalk.com/public/map/39863/units" target="_blank" class="course-item">English Language Arts 8</a>
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>English Language Arts 8</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>In this course, students will engage in critical analysis of a wide range of literature and nonfiction. Emphasis is placed on developing sophisticated writing skills, including research techniques, literary analysis, and persuasive argumentation, preparing them for high school-level work.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/39838/units" target="_blank" class="button-link">View ELA 8 Curriculum Map</a>
+            </div>
+        </div>
       </div>
     </section>
   </main>
 
-  
   <footer>
-    <p>© 2024 HCST District. All rights reserved.</p>
+    <p>&copy; 2025 Hudson County Schools of Technology. All Rights Reserved.</p>
   </footer>
-</div>
+  </div>
+
+<script>
+  function toggleDropdown(button) {
+    button.classList.toggle('active');
+    const content = button.nextElementSibling;
+    content.classList.toggle('active');
+  }
+</script>
+
 </body>
 </html>

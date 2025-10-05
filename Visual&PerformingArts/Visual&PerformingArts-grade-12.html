@@ -1,9 +1,15 @@
+Of course. Here is the "Visual and Performing Arts - Grade 12" page, updated to use your website's template with interactive dropdowns for all the courses.
+
+Updated Page Code
+HTML
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arts Grade 12</title>
+  <title>Arts - Grade 12</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -15,7 +21,7 @@
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="../giftedtalented.html">Gifted & Talanted</a></li>
+        <li><a href="../giftedtalented.html">Gifted & Talented</a></li>
         <li><a href="../dualenrollment.html">Dual Enrollment</a></li>
         <li><a href="../documents.html">Documents</a></li>
         <li><a href="../contact.html">Contact</a></li>
@@ -23,27 +29,86 @@
     </nav>
   </header>
 
-
-  <main>
+ <main>
     <section class="details">
       <div class="grade-nav-buttons">
-      <a href="Visual&PerformingArts-grade-11.html" class="button-link back">← Back: Grade 6</a>
+      <a href="Visual&PerformingArts-grade-11.html" class="button-link">← Previous: Grade 11</a>
+      <span></span>
       </div>
       <h2>Visual and Performing Arts - Grade 12</h2>
       <div class="course-list">
-        <a href="https://hcst-5154.chalk.com/public/map/44752/units" target="_blank" class="course-item">Fine Art III</a>
-        <a href="https://hcst-5154.chalk.com/public/map/45380/units" target="_blank" class="course-item">Performing Arts - Guitar</a>  
-        <a href="https://hcst-5154.chalk.com/public/map/45381/units" target="_blank" class="course-item">Performing Arts - Instrumental Music</a>  
-        <a href="https://hcst-5154.chalk.com/public/map/46279/units" target="_blank" class="course-item">Performing Arts - Vocal Music</a>  
-        <a href="https://hcst-5154.chalk.com/public/map/38326/units" target="_blank" class="course-item">Dance Technique</a> 
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Fine Art III</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>This advanced course is for serious art students focused on portfolio development. Students will work to create a cohesive body of work in a chosen concentration, guided by critiques and advanced technical instruction.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/44752/units" target="_blank" class="button-link">View Fine Art III Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Performing Arts - Guitar</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>This course is for students of all levels to learn and develop guitar skills. Instruction covers basic chords, reading music and tablature, and various playing styles. Students will perform both solo and in ensembles.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/45380/units" target="_blank" class="button-link">View Guitar Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Performing Arts - Instrumental Music</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>This course allows students to participate in an instrumental ensemble. The curriculum focuses on developing technical proficiency, sight-reading skills, and music theory through rehearsal and performance.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/45381/units" target="_blank" class="button-link">View Instrumental Music Curriculum Map</a>
+            </div>
+        </div>
+        
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Performing Arts - Vocal Music</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>This course is designed for students interested in vocal performance, typically as part of a choir. It covers vocal technique, sight-singing, music theory, and performance skills through a variety of musical genres.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/46279/units" target="_blank" class="button-link">View Vocal Music Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Dance Technique</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <p>This course is for students who wish to develop their skills in various dance styles. The curriculum focuses on building core strength, flexibility, and coordination, with instruction in techniques such as ballet, jazz, and modern dance.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38326/units" target="_blank" class="button-link">View Dance Technique Curriculum Map</a>
+            </div>
+        </div>
+
       </div>
     </section>
   </main>
- 
-
+  
   <footer>
-    <p>© 2024 HCST District. All rights reserved.</p>
+    <p>&copy; 2025 Hudson County Schools of Technology. All Rights Reserved.</p>
   </footer>
-  </div>
+</div>
+
+<script>
+  function toggleDropdown(button) {
+    button.classList.toggle('active');
+    const content = button.nextElementSibling;
+    content.classList.toggle('active');
+  }
+</script>
+
 </body>
 </html>
