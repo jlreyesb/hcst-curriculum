@@ -388,7 +388,7 @@ main {
 }
 
 .dropdown-content.active {
-    max-height: 850px; /* Adjusted to make the dropdown content smaller when open */
+    max-height: 150px; /* Adjusted to make the dropdown content smaller when open */
     padding-top: 1rem;
     padding-bottom: 1rem;
     transition: max-height 0.5s ease-in, padding 0.5s ease-in;
