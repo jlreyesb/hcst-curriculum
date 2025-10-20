@@ -674,3 +674,9 @@ footer {
 .sub-dropdown-content p {
     margin-bottom: 1rem;
 }
+
+/* Makes the logo link inherit header styling */
+header .logo a {
+  color: inherit; /* Inherits the white color from the header */
+  text-decoration: none; /* Removes the underline */
+}
