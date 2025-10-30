@@ -251,7 +251,7 @@ footer {
 /* Popup Header */
 .popup-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background: linear-gradient(-45deg, #ffcc00, #333);
   background-size: 200% 200%;
@@ -259,6 +259,12 @@ footer {
   color: white;
   padding: 8px;
   border-radius: 5px 5px 0 0;
+}
+
+.popup-header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /*
