@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Science - All Courses</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="icon" type="image/png" href="../images/hcst-logo.png">
+  
+</head>
+<body>
+  <div class="page-container">
+  <header>
+    <div class="logo">
+      <a href="../index.html"><h1>HCST Curriculum</h1></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../giftedtalented.html">Gifted & Talented</a></li>
+        <li><a href="../dualenrollment.html">Dual Enrollment</a></li>
+        <li><a href="../documents.html">Documents</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul> 
+    </nav>
+  </header>
+
+<main>
+   <section class="details">
+
+  <div class="grade-nav-buttons">
+      <span></span>
+  <a href="ComputerScience-grade-6.html" class="button-link">Next: Grade 6 →</a>
+</div>
+     <h2>Computer Science - All Courses</h2>
+     <div class="course-list">
+        
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>AP Computer Science A</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content dropdown-content-single">
+              <p>AP Computer Science A is an introductory college-level course in computer science. Students cultivate their understanding of programming with a focus on problem solving and algorithm development using the Java programming language.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/38826/units" target="_blank" class="button-link">View AP CSA Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>AP Computer Science Principles</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content dropdown-content-single">
+              <p>AP Computer Science Principles introduces students to the foundational concepts of computer science and challenges them to explore how computing and technology can impact the world. The course covers creative problem solving, data, and the societal impacts of computing.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/40105/units" target="_blank" class="button-link">View AP CSP Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Technology 6</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content dropdown-content-single">
+              <p>This introductory course provides students with foundational skills in digital literacy, online safety, and computer basics. Topics include effective use of productivity software, an introduction to block-based coding, and responsible digital citizenship.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/45323/units" target="_blank" class="button-link">View Technology 6 Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Technology 7</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content dropdown-content-single">
+              <p>Building on the skills from Grade 6, this course introduces more advanced topics, including spreadsheet and data management, the fundamentals of web design using HTML, and an introduction to text-based programming concepts.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/45322/units" target="_blank" class="button-link">View Technology 7 Curriculum Map</a>
+            </div>
+        </div>
+
+        <div class="course-item-dropdown">
+            <button class="course-item" onclick="toggleDropdown(this)">
+              <span>Technology 8</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content dropdown-content-single">
+              <p>This course advances students' skills by focusing on algorithmic thinking and problem-solving through text-based programming. Students will also explore topics in cybersecurity, data analysis, and the societal impacts of technology.</p>
+              <a href="https://hcst-5154.chalk.com/public/map/39212/units" target="_blank" class="button-link">View Technology 8 Curriculum Map</a>
+            </div>
+        </div>
+        
+     </div>
+   </section>
+</main>
+
+
+  <footer>
+    <p>&copy; 2025 Hudson County Schools of Technology. All Rights Reserved.</p>
+  </footer>
+</div>
+
+<script>
+  function toggleDropdown(button) {
+    button.classList.toggle('active');
+    const content = button.nextElementSibling;
+    content.classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>
