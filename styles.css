@@ -686,3 +686,20 @@ header .logo a {
   color: inherit; /* Inherits the white color from the header */
   text-decoration: none; /* Removes the underline */
 }
+
+/* --- Search Bar Styling --- */
+#courseSearch {
+  width: 100%; /* Full width */
+  padding: 12px 20px; /* Spacing inside */
+  margin-bottom: 20px; /* Space below the bar */
+  border: 2px solid #d4af37; /* HCST Gold Border */
+  border-radius: 6px; /* Rounded corners */
+  font-size: 1.1rem; /* Readable text */
+  box-sizing: border-box; /* Ensures padding doesn't break width */
+}
+
+#courseSearch:focus {
+  outline: none;
+  border-color: #b5952f; /* Darker gold when clicked */
+  box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+}
