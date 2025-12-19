@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Pathway Helper - HCST</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="icon" type="image/png" href="../images/hcst-logo.png">
+
+  <style>
+    /* TOOL SPECIFIC STYLES */
+    .tool-container { 
+      background: white; 
+      padding: 30px; 
+      border-radius: 8px; 
+      border: 1px solid #ddd; 
+      max-width: 800px; 
+      margin: 20px auto; /* Centers the box */
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    
+    /* Grid for checkboxes */
+    .checkbox-grid { 
+      display: grid; 
+      grid-template-columns: 1fr 1fr; 
+      gap: 15px; 
+      margin-bottom: 30px; 
+    }
+    
+    @media (max-width: 600px) {
+      .checkbox-grid { grid-template-columns: 1fr; }
+    }
+    
+    /* Custom Label Styling */
+    .tool-container label { 
+      display: flex; 
+      align-items: center; 
+      font-size: 16px; 
+      cursor: pointer; 
+      padding: 10px; 
+      border-radius: 4px; 
+      transition: background 0.2s; 
+      border: 1px solid transparent; 
+    }
+    .tool-container label:hover { 
+      background-color: #f9f9f9; 
+      border-color: #eee;
+    }
+    
+    .tool-container input[type="checkbox"] { 
+      transform: scale(1.3); 
+      margin-right: 15px; 
+      cursor: pointer; 
+      accent-color: #d4af37; 
+    }
+    
+    .section-title { 
+      grid-column: 1 / -1; 
+      font-weight: bold; 
+      margin-top: 20px; 
+      color: #666; 
+      font-size: 0.95em; 
+      text-transform: uppercase; 
+      letter-spacing: 1px; 
+      border-bottom: 1px solid #eee; 
+      padding-bottom: 5px; 
+    }
+
+    /* Result Box Styling */
+    .result-box { 
+      margin-top: 30px; 
+      padding: 25px; 
+      border-left: 6px solid #d4af37; 
+      background-color: #fffcf0; 
+      display: none; 
+      border-radius: 4px;
+    }
+    .result-title { 
+      font-weight: bold; 
+      color: #333; 
+      margin-bottom: 15px; 
+      font-size: 1.2rem; 
+    }
+    .result-box ul { margin: 0; padding-left: 20px; }
+    .result-box li { margin-bottom: 10px; line-height: 1.5; font-size: 1.05rem; }
+
+    /* Buttons */
+    .button-group {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    
+    .btn-generate { 
+      background-color: #d4af37; 
+      color: white; 
+      border: none; 
+      padding: 14px 28px; 
+      border-radius: 4px; 
+      font-size: 16px; 
+      font-weight: bold; 
+      cursor: pointer; 
+      flex: 2;
+      transition: background 0.2s;
+    }
+    .btn-generate:hover { background-color: #b5952f; }
+
+    .btn-reset {
+      background-color: #f0f0f0;
+      color: #333;
+      border: 1px solid #ccc;
+      padding: 14px 28px;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      flex: 1;
+      transition: background 0.2s;
+    }
+    .btn-reset:hover { background-color: #e0e0e0; }
+    
+    /* Header Fix */
+    header .logo a { text-decoration: none; color: white; }
+  </style>
+</head>
+<body>
+  <div class="page-container">
+    
+    <header>
+      <div class="logo">
+        <a href="../index.html"><h1>HCST Curriculum</h1></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../giftedtalented.html">Gifted & Talented</a></li>
+          <li><a href="../dualenrollment.html">Dual Enrollment</a></li>
+          <li><a href="../documents.html">Documents</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="details">
+        
+        <div class="grade-nav-buttons">
+          <a href="math-all.html" class="button-link">← Back to Math Department</a>
+        </div>
+
+        <h2>Math Pathway Helper</h2>
+        
+        <p style="margin-bottom: 20px; text-align: center;">Select <strong>every course</strong> the student has completed to see recommended options for next year.</p>
+
+        <div class="tool-container">
+          
+          <div class="checkbox-grid">
+            
+            <div class="section-title" style="margin-top: 0;">Core Sequence</div>
+            <label><input type="checkbox" id="alg1"> Algebra 1</label>
+            <label><input type="checkbox" id="geom"> Geometry</label>
+            <label><input type="checkbox" id="alg2"> Algebra 2</label>
+            
+            <div class="section-title">Electives</div>
+            <label><input type="checkbox" id="biz"> Business Math</label>
+            <label><input type="checkbox" id="statsReg"> Statistics (Regular)</label>
+            <label><input type="checkbox" id="statsAP"> AP Statistics</label>
+            <label><input type="checkbox" id="precalcReg"> Precalculus (Regular)</label>
+            <label><input type="checkbox" id="precalcAP"> AP Precalculus</label>
+            
+            <div class="section-title">Calculus Sequence</div>
+            <label><input type="checkbox" id="calcReg"> Calculus (Regular)</label>
+            <label><input type="checkbox" id="calcAB"> AP Calculus AB</label>
+            <label><input type="checkbox" id="calcBC"> AP Calculus BC</label>
+          </div>
+
+          <div class="button-group">
+            <button class="btn-generate" onclick="findPath()">Generate Recommendations</button>
+            <button class="btn-reset" onclick="resetForm()">Reset</button>
+          </div>
+
+          <div id="output" class="result-box">
+            <div class="result-title">Options for Next Year:</div>
+            <ul id="list"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Hudson County Schools of Technology. All Rights Reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    // Logic Engine
+    function findPath() {
+      var alg1 = document.getElementById("alg1").checked;
+      var geom = document.getElementById("geom").checked;
+      var alg2 = document.getElementById("alg2").checked;
+      
+      var hasPrecalc = document.getElementById("precalcReg").checked || document.getElementById("precalcAP").checked;
+      
+      var calcReg = document.getElementById("calcReg").checked;
+      var calcAB = document.getElementById("calcAB").checked;
+      var calcBC = document.getElementById("calcBC").checked;
+      
+      var doneBiz = document.getElementById("biz").checked;
+      var doneStatsReg = document.getElementById("statsReg").checked;
+      var doneStatsAP = document.getElementById("statsAP").checked;
+
+      var outputDiv = document.getElementById("output");
+      var list = document.getElementById("list");
+      list.innerHTML = ""; 
+      outputDiv.style.display = "block";
+      var options = [];
+
+      // LEVEL 1: CORE SEQUENCE
+      if (!alg1) {
+        options.push("<strong>Algebra 1</strong>");
+      } else if (!geom) {
+        options.push("<strong>Geometry</strong> (Honors available if qualified)");
+      } else if (!alg2) {
+        options.push("<strong>Algebra 2</strong> (Honors available if qualified)");
+      } 
+      
+      // LEVEL 2: ELECTIVES
+      else {
+        if (!doneBiz) {
+            options.push("<strong>Business Math</strong>");
+        }
+
+        if (!doneStatsReg && !doneStatsAP) {
+            options.push("<strong>Statistics (Regular)</strong>");
+            options.push("<strong>AP Statistics</strong> (Requires Qualification)");
+        } else if (doneStatsReg && !doneStatsAP) {
+            options.push("<strong>AP Statistics</strong> (Requires Qualification)");
+        }
+
+        if (!hasPrecalc && !calcReg && !calcAB && !calcBC) {
+           options.push("<strong>Precalculus (Regular)</strong> - REQUIRED for Calculus path");
+           options.push("<strong>AP Precalculus</strong> (Requires Qualification) - REQUIRED for Calculus path");
+        }
+        
+        // LEVEL 3: CALCULUS
+        if (hasPrecalc) {
+           if (!calcReg && !calcAB && !calcBC) {
+               options.push("<strong>Calculus (Regular)</strong>");
+               options.push("<strong>AP Calculus AB</strong> (Requires Qualification)");
+               options.push("<strong>AP Calculus BC</strong> (Requires HIGH Qualification/Skip Test)");
+           }
+           else if (calcReg && !calcAB && !calcBC) {
+               options.push("<strong>AP Calculus AB</strong> (Requires Qualification)");
+               options.push("<strong>AP Calculus BC</strong> (Requires Qualification)");
+           }
+           else if (calcAB && !calcBC) {
+               options.push("<strong>AP Calculus BC</strong> - Standard Progression");
+           }
+        }
+      }
+
+      if (options.length === 0) {
+          list.innerHTML = "<li>No standard options found. (Student has completed the full Math sequence).</li>";
+      } else {
+          for (var i = 0; i < options.length; i++) {
+            list.innerHTML += "<li>" + options[i] + "</li>";
+          }
+      }
+    }
+
+    function resetForm() {
+      document.querySelectorAll('input[type="checkbox"]').forEach(el => el.checked = false);
+      document.getElementById("list").innerHTML = "";
+      document.getElementById("output").style.display = "none";
+    }
+  </script>
+</body>
+</html>
